@@ -1,0 +1,203 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Recursos - SOPHIA">
+  <main class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+          Recursos y Herramientas
+        </h1>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+          Recursos complementarios para enriquecer tu práctica de desarrollo personal con las filosofías integradas en SOPHIA.
+        </p>
+      </div>
+
+      <!-- Resource Categories -->
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
+        <!-- Philosophy Resources -->
+        <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl">📚</span>
+            </div>
+            <h3 class="text-2xl font-semibold text-white">Lecturas Filosóficas</h3>
+          </div>
+
+          <div class="space-y-4">
+            <div class="border-l-4 border-amber-400 pl-4">
+              <h4 class="text-lg font-medium text-white mb-2">Estoicismo</h4>
+              <ul class="text-slate-300 text-sm space-y-1">
+                <li>• "Meditaciones" - Marco Aurelio</li>
+                <li>• "Cartas a Lucilio" - Séneca</li>
+                <li>• "Manual de Epicteto"</li>
+              </ul>
+            </div>
+
+            <div class="border-l-4 border-blue-400 pl-4">
+              <h4 class="text-lg font-medium text-white mb-2">Budismo</h4>
+              <ul class="text-slate-300 text-sm space-y-1">
+                <li>• "El corazón de la sabiduría"</li>
+                <li>• "El camino del Buda" - Thich Nhat Hanh</li>
+                <li>• "Budismo para principiantes"</li>
+              </ul>
+            </div>
+
+            <div class="border-l-4 border-green-400 pl-4">
+              <h4 class="text-lg font-medium text-white mb-2">Taoísmo</h4>
+              <ul class="text-slate-300 text-sm space-y-1">
+                <li>• "Tao Te Ching" - Lao Tzu</li>
+                <li>• "El arte de la guerra" - Sun Tzu</li>
+                <li>• "Chuang Tzu"</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Practice Tools -->
+        <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl">🧘</span>
+            </div>
+            <h3 class="text-2xl font-semibold text-white">Herramientas de Práctica</h3>
+          </div>
+
+          <div class="space-y-4">
+            <div>
+              <h4 class="text-lg font-medium text-white mb-2">Meditación Guiada</h4>
+              <p class="text-slate-300 text-sm mb-3">
+                Sesiones de meditación basadas en las seis filosofías, disponibles en múltiples idiomas.
+              </p>
+              <button class="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+                Explorar Meditaciones →
+              </button>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-medium text-white mb-2">Diarios de Reflexión</h4>
+              <p class="text-slate-300 text-sm mb-3">
+                Plantillas descargables para profundizar en tu práctica diaria.
+              </p>
+              <button class="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+                Descargar Plantillas →
+              </button>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-medium text-white mb-2">Ejercicios Interactivos</h4>
+              <p class="text-slate-300 text-sm mb-3">
+                Actividades prácticas para aplicar principios filosóficos en la vida cotidiana.
+              </p>
+              <button class="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+                Ver Ejercicios →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Community Resources -->
+        <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10">
+          <div class="flex items-center mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl">🤝</span>
+            </div>
+            <h3 class="text-2xl font-semibold text-white">Comunidad</h3>
+          </div>
+
+          <div class="space-y-4">
+            <div>
+              <h4 class="text-lg font-medium text-white mb-2">Foro de Discusión</h4>
+              <p class="text-slate-300 text-sm mb-3">
+                Conecta con otros practicantes, comparte experiencias y aprende juntos.
+              </p>
+              <button class="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors">
+                Unirse al Foro →
+              </button>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-medium text-white mb-2">Grupos de Estudio</h4>
+              <p class="text-slate-300 text-sm mb-3">
+                Sesiones virtuales semanales para explorar textos filosóficos.
+              </p>
+              <button class="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors">
+                Ver Calendario →
+              </button>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-medium text-white mb-2">Historias de Usuario</h4>
+              <p class="text-slate-300 text-sm mb-3">
+                Testimonios reales de transformación personal con SOPHIA.
+              </p>
+              <button class="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors">
+                Leer Historias →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Content -->
+      <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 mb-12">
+        <h2 class="text-3xl font-light text-white mb-8 text-center">Contenido Destacado</h2>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <!-- Philosophy Deep Dive -->
+          <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-xl p-6 border border-amber-400/20">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl mr-3">🧠</span>
+              <h3 class="text-xl font-semibold text-white">Profundizando en las Filosofías</h3>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Artículos detallados que exploran cómo cada filosofía se integra en SOPHIA, con ejemplos prácticos y consejos de aplicación.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Estoicismo</span>
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Budismo</span>
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Taoísmo</span>
+            </div>
+          </div>
+
+          <!-- Integration Guide -->
+          <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl p-6 border border-blue-400/20">
+            <div class="flex items-center mb-4">
+              <span class="text-2xl mr-3">🔗</span>
+              <h3 class="text-xl font-semibold text-white">Guía de Integración</h3>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Cómo combinar diferentes perspectivas filosóficas para crear un enfoque personalizado de desarrollo personal.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Integración</span>
+              <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Práctica</span>
+              <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Aplicación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter Signup -->
+      <div class="text-center">
+        <div class="bg-gradient-to-r from-amber-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30 max-w-2xl mx-auto">
+          <h3 class="text-2xl font-light text-white mb-4">Mantente Actualizado</h3>
+          <p class="text-amber-100/90 leading-relaxed mb-6">
+            Recibe recursos exclusivos, artículos filosóficos y actualizaciones sobre nuevas herramientas directamente en tu correo.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <input
+              type="email"
+              placeholder="Tu correo electrónico"
+              class="flex-1 px-4 py-3 bg-slate-800/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-amber-400 transition-colors"
+            >
+            <button class="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/25">
+              Suscribirse
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

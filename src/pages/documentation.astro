@@ -1,0 +1,175 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Documentación SOPHIA - Transparencia Total">
+  <main class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+    <!-- Header -->
+    <section class="py-24 bg-gradient-to-r from-slate-900 via-purple-900/20 to-amber-900/10 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-30">
+        <div class="philosophical-fusion-animation"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-light text-white mb-6 tracking-wide">
+          Documentación SOPHIA
+        </h1>
+        <p class="text-xl text-amber-100/90 max-w-3xl mx-auto font-light leading-relaxed">
+          Transparencia radical en el desarrollo de SOPHIA. Accede a toda la documentación del proyecto, desde la visión hasta los detalles técnicos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Documentation Grid -->
+    <section class="py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
+          <!-- Overview -->
+          <a href="/documentation/00_overview" class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 cursor-pointer block">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">📋</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white">00_overview</h3>
+            </div>
+            <p class="text-slate-400 text-sm mb-3">Visión, roadmap y alcance del proyecto</p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">vision.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">roadmap.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">introduction.md</span>
+            </div>
+          </a>
+
+          <!-- Features -->
+          <a href="/documentation/01_features" class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 cursor-pointer block">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">⚡</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white">01_features</h3>
+            </div>
+            <p class="text-slate-400 text-sm mb-3">Funcionalidades MVP y post-MVP</p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">mvp_features.md</span>
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">post_mvp_features.md</span>
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">feature_matrix.md</span>
+            </div>
+          </a>
+
+          <!-- Architecture -->
+          <a href="/documentation/02_architecture" class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 cursor-pointer block">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">🏗️</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white">02_architecture</h3>
+            </div>
+            <p class="text-slate-400 text-sm mb-3">Arquitectura del sistema y stack tecnológico</p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">system_architecture.md</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">tech_stack.md</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">data_model.md</span>
+            </div>
+          </a>
+
+          <!-- Guides -->
+          <a href="/documentation/03_guides" class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 cursor-pointer block">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">📖</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white">03_guides</h3>
+            </div>
+            <p class="text-slate-400 text-sm mb-3">Guías para desarrolladores y usuarios</p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs">developer_guide.md</span>
+              <span class="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs">user_guide.md</span>
+              <span class="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs">faq.md</span>
+            </div>
+          </a>
+
+          <!-- Todos -->
+          <a href="/documentation/04_todos" class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-orange-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/10 cursor-pointer block">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">✅</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white">04_todos</h3>
+            </div>
+            <p class="text-slate-400 text-sm mb-3">Backlog y tareas pendientes</p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 rounded text-xs">todos.md</span>
+              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 rounded text-xs">backlog.md</span>
+            </div>
+          </a>
+
+          <!-- Philosophy Docs -->
+          <a href="/documentation/philosophy" class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 cursor-pointer block">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">🧠</span>
+              </div>
+              <h3 class="text-lg font-semibold text-white">Filosofía & Diseño</h3>
+            </div>
+            <p class="text-slate-400 text-sm mb-3">Principios filosóficos y de diseño</p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">CARACTERISTICAS.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">PRINCIPIOS_DISENO.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">SABIDURIO_TECNOLOGIA.md</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Transparency Message -->
+        <div class="text-center">
+          <div class="bg-gradient-to-r from-amber-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30 max-w-4xl mx-auto">
+            <h3 class="text-2xl font-light text-white mb-4">¿Por qué esta transparencia?</h3>
+            <p class="text-amber-100/90 leading-relaxed mb-6">
+              Creemos que la excelencia se construye sobre la confianza. Al compartir todo nuestro proceso de desarrollo, roadmap y decisiones técnicas, demostramos que SOPHIA no es solo una aplicación hermosa, sino un proyecto construido con integridad y ambición de clase mundial.
+            </p>
+            <a href="/" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/25">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+              </svg>
+              Volver al Inicio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .philosophical-fusion-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(circle at 20% 80%, rgba(251, 191, 36, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+    animation: philosophicalFlow 20s ease-in-out infinite;
+  }
+
+  @keyframes philosophicalFlow {
+    0%, 100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 0.3;
+    }
+    25% {
+      transform: scale(1.1) rotate(90deg);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(0.9) rotate(180deg);
+      opacity: 0.2;
+    }
+    75% {
+      transform: scale(1.05) rotate(270deg);
+      opacity: 0.4;
+    }
+  }
+</style>

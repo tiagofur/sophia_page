@@ -1,0 +1,162 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="01_features - Funcionalidades de SOPHIA">
+  <main class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+    <!-- Header -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-blue-900/20 to-cyan-900/10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex items-center mb-6">
+          <a href="/documentation" class="inline-flex items-center px-4 py-2 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-600/30 hover:border-blue-400/50 transition-all duration-300 mr-4">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            Volver a Documentación
+          </a>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-light text-white mb-4 tracking-wide">
+          01_features
+        </h1>
+        <p class="text-xl text-blue-100/90 max-w-3xl font-light leading-relaxed">
+          Funcionalidades MVP y post-MVP de SOPHIA
+        </p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16 bg-gradient-to-b from-slate-800 to-slate-900 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- MVP Features -->
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+              <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 text-sm font-bold">MVP</span>
+              Funcionalidades Core
+            </h2>
+
+            <div class="space-y-6">
+              <div class="border-l-4 border-amber-400 pl-6">
+                <h3 class="text-lg font-semibold text-amber-400 mb-2">El Diario</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-3">
+                  Sistema intuitivo de tarjetas organizadas en 6 categorías para capturar experiencias sin distracciones.
+                </p>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="bg-slate-700/50 rounded p-2 text-center">
+                    <div class="text-lg mb-1">📝</div>
+                    <div class="text-xs text-slate-300">Pensamientos</div>
+                  </div>
+                  <div class="bg-slate-700/50 rounded p-2 text-center">
+                    <div class="text-lg mb-1">💭</div>
+                    <div class="text-xs text-slate-300">Emociones</div>
+                  </div>
+                  <div class="bg-slate-700/50 rounded p-2 text-center">
+                    <div class="text-lg mb-1">🎯</div>
+                    <div class="text-xs text-slate-300">Metas</div>
+                  </div>
+                  <div class="bg-slate-700/50 rounded p-2 text-center">
+                    <div class="text-lg mb-1">🌱</div>
+                    <div class="text-xs text-slate-300">Crecimiento</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-l-4 border-blue-400 pl-6">
+                <h3 class="text-lg font-semibold text-blue-400 mb-2">El Mentor IA</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Google Gemini que analiza entradas y aplica sabiduría de 6 filosofías para ofrecer perspectivas únicas y accionables.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post-MVP Features -->
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+              <span class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3 text-sm font-bold">2.0</span>
+              Funcionalidades Futuras
+            </h2>
+
+            <div class="space-y-6">
+              <div class="border-l-4 border-green-400 pl-6">
+                <h3 class="text-lg font-semibold text-green-400 mb-2">Dashboard Personal</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Métricas clave de progreso emocional y patrones de crecimiento con visualizaciones interactivas.
+                </p>
+              </div>
+
+              <div class="border-l-4 border-orange-400 pl-6">
+                <h3 class="text-lg font-semibold text-orange-400 mb-2">Reportes PDF</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Análisis profesionales de 4 páginas con filtros avanzados e insights profundos.
+                </p>
+              </div>
+
+              <div class="border-l-4 border-pink-400 pl-6">
+                <h3 class="text-lg font-semibold text-pink-400 mb-2">Comunidad</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                  Espacio para compartir experiencias y aprender de otros practicantes del crecimiento consciente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Matrix -->
+        <div class="mt-12 bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+          <h2 class="text-2xl font-semibold text-white mb-6">Matriz de Características</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b border-slate-600">
+                  <th class="text-left py-3 px-4 text-slate-300 font-semibold">Característica</th>
+                  <th class="text-center py-3 px-4 text-green-400 font-semibold">MVP</th>
+                  <th class="text-center py-3 px-4 text-purple-400 font-semibold">v2.0</th>
+                  <th class="text-center py-3 px-4 text-blue-400 font-semibold">v3.0</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-300">
+                <tr class="border-b border-slate-700/50">
+                  <td class="py-3 px-4">Diario de tarjetas</td>
+                  <td class="text-center py-3 px-4"><span class="text-green-400">✓</span></td>
+                  <td class="text-center py-3 px-4"><span class="text-green-400">✓</span></td>
+                  <td class="text-center py-3 px-4"><span class="text-green-400">✓</span></td>
+                </tr>
+                <tr class="border-b border-slate-700/50">
+                  <td class="py-3 px-4">Mentor IA</td>
+                  <td class="text-center py-3 px-4"><span class="text-green-400">✓</span></td>
+                  <td class="text-center py-3 px-4"><span class="text-green-400">✓</span></td>
+                  <td class="text-center py-3 px-4"><span class="text-green-400">✓</span></td>
+                </tr>
+                <tr class="border-b border-slate-700/50">
+                  <td class="py-3 px-4">Dashboard personal</td>
+                  <td class="text-center py-3 px-4">—</td>
+                  <td class="text-center py-3 px-4"><span class="text-purple-400">✓</span></td>
+                  <td class="text-center py-3 px-4"><span class="text-purple-400">✓</span></td>
+                </tr>
+                <tr class="border-b border-slate-700/50">
+                  <td class="py-3 px-4">Reportes PDF</td>
+                  <td class="text-center py-3 px-4">—</td>
+                  <td class="text-center py-3 px-4"><span class="text-purple-400">✓</span></td>
+                  <td class="text-center py-3 px-4"><span class="text-purple-400">✓</span></td>
+                </tr>
+                <tr class="border-b border-slate-700/50">
+                  <td class="py-3 px-4">Comunidad</td>
+                  <td class="text-center py-3 px-4">—</td>
+                  <td class="text-center py-3 px-4">—</td>
+                  <td class="text-center py-3 px-4"><span class="text-blue-400">✓</span></td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-4">Sincronización offline</td>
+                  <td class="text-center py-3 px-4">—</td>
+                  <td class="text-center py-3 px-4"><span class="text-purple-400">✓</span></td>
+                  <td class="text-center py-3 px-4"><span class="text-purple-400">✓</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

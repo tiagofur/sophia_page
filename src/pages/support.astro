@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Soporte - SOPHIA">
+  <main class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+    <div class="max-w-4xl mx-auto px-4 py-16">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+          Centro de Soporte
+        </h1>
+        <p class="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+          Estamos aquí para ayudarte en tu viaje de desarrollo personal. Encuentra respuestas y obtén asistencia cuando la necesites.
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 mb-12">
+        <!-- FAQ Section -->
+        <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-white font-bold text-xl">?</span>
+            </div>
+            <h2 class="text-2xl font-semibold text-white">Preguntas Frecuentes</h2>
+          </div>
+
+          <div class="space-y-4">
+            <details class="group">
+              <summary class="cursor-pointer text-slate-300 hover:text-white transition-colors font-medium">
+                ¿Cómo funciona el diario filosófico?
+              </summary>
+              <p class="mt-2 text-slate-400 text-sm leading-relaxed">
+                El diario organiza tus reflexiones en 6 categorías principales. Cada entrada se analiza con IA para proporcionar perspectivas filosóficas personalizadas.
+              </p>
+            </details>
+
+            <details class="group">
+              <summary class="cursor-pointer text-slate-300 hover:text-white transition-colors font-medium">
+                ¿Qué filosofías utiliza SOPHIA?
+              </summary>
+              <p class="mt-2 text-slate-400 text-sm leading-relaxed">
+                Integramos Estoicismo, Budismo, Taoísmo, Zen, Existencialismo y Humanismo para ofrecerte perspectivas diversas y profundas.
+              </p>
+            </details>
+
+            <details class="group">
+              <summary class="cursor-pointer text-slate-300 hover:text-white transition-colors font-medium">
+                ¿Es segura mi información personal?
+              </summary>
+              <p class="mt-2 text-slate-400 text-sm leading-relaxed">
+                Sí, utilizamos encriptación de nivel empresarial y cumplimos con GDPR. Tus reflexiones personales están completamente protegidas.
+              </p>
+            </details>
+
+            <details class="group">
+              <summary class="cursor-pointer text-slate-300 hover:text-white transition-colors font-medium">
+                ¿Cómo puedo exportar mis datos?
+              </summary>
+              <p class="mt-2 text-slate-400 text-sm leading-relaxed">
+                En la configuración de tu cuenta encontrarás opciones para exportar todos tus datos en formatos estándar como JSON o PDF.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-white font-bold text-xl">💬</span>
+            </div>
+            <h2 class="text-2xl font-semibold text-white">Contactar Soporte</h2>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-medium text-white mb-2">Correo Electrónico</h3>
+              <p class="text-slate-400 text-sm mb-2">
+                Para consultas generales y soporte técnico:
+              </p>
+              <a href="mailto:support@sophia-app.com" class="text-amber-400 hover:text-amber-300 transition-colors">
+                support@sophia-app.com
+              </a>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-medium text-white mb-2">Tiempo de Respuesta</h3>
+              <p class="text-slate-400 text-sm">
+                Respondemos a todas las consultas dentro de 24-48 horas hábiles.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-medium text-white mb-2">Horarios de Atención</h3>
+              <p class="text-slate-400 text-sm">
+                Lunes a Viernes: 9:00 - 18:00 (GMT-6)<br>
+                Sábados: 10:00 - 14:00 (GMT-6)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Troubleshooting Guide -->
+      <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+        <h2 class="text-2xl font-semibold text-white mb-6">Guía de Solución de Problemas</h2>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <div>
+            <h3 class="text-lg font-medium text-white mb-3">Problemas Comunes</h3>
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2">•</span>
+                <span class="text-sm">La app no se abre: Reinicia la aplicación y verifica tu conexión a internet</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2">•</span>
+                <span class="text-sm">El mentor IA no responde: Verifica que tengas una conexión estable</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2">•</span>
+                <span class="text-sm">Datos no se sincronizan: Revisa los permisos de la aplicación</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-medium text-white mb-3">Optimización</h3>
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2">•</span>
+                <span class="text-sm">Mejora el rendimiento limpiando el caché de la app</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2">•</span>
+                <span class="text-sm">Asegúrate de tener la última versión instalada</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2">•</span>
+                <span class="text-sm">Usa una conexión WiFi para mejor estabilidad</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community Section -->
+      <div class="text-center mt-12">
+        <div class="bg-gradient-to-r from-amber-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30 max-w-2xl mx-auto">
+          <h3 class="text-2xl font-light text-white mb-4">Únete a Nuestra Comunidad</h3>
+          <p class="text-amber-100/90 leading-relaxed mb-6">
+            Conecta con otros usuarios de SOPHIA, comparte experiencias y aprende juntos en nuestro foro comunitario.
+          </p>
+          <button class="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/25">
+            Unirse al Foro
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

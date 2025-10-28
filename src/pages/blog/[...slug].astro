@@ -1,0 +1,257 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await post.render();
+
+// Get related posts
+const allPosts = await getCollection('blog');
+const relatedPosts = allPosts
+  .filter(p => p.id !== post.id && !p.data.draft)
+  .filter(p =>
+    p.data.category === post.data.category ||
+    p.data.tags?.some(tag => post.data.tags?.includes(tag))
+  )
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 3);
+---
+
+<BlogLayout title={post.data.title} description={post.data.description}>
+  <Breadcrumbs items={[
+    { label: "Blog", href: "/blog" },
+    ...(post.data.category ? [{ label: post.data.category.charAt(0).toUpperCase() + post.data.category.slice(1), href: `/blog?category=${post.data.category}` }] : []),
+    { label: post.data.title }
+  ]} />
+
+  <article class="max-w-4xl mx-auto">
+    <!-- Article Header -->
+    <header class="mb-8">
+      {post.data.heroImage && (
+        <div class="mb-8 rounded-2xl overflow-hidden">
+          <img
+            src={post.data.heroImage}
+            alt={post.data.title}
+            class="w-full h-64 md:h-96 object-cover"
+            loading="lazy"
+          />
+        </div>
+      )}
+
+      <div class="flex items-center text-sm text-slate-400 mb-4">
+        <span class="flex items-center">
+          <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          {post.data.pubDate.toLocaleDateString('es-ES', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })}
+        </span>
+        <span class="mx-2">•</span>
+        <span class="flex items-center">
+          <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+          </svg>
+          {post.data.author}
+        </span>
+        {post.data.updatedDate && (
+          <>
+            <span class="mx-2">•</span>
+            <span class="flex items-center">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+              Actualizado: {post.data.updatedDate.toLocaleDateString('es-ES', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+              })}
+            </span>
+          </>
+        )}
+      </div>
+
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-6 leading-tight">
+        {post.data.title}
+      </h1>
+
+      <p class="text-xl text-slate-300 leading-relaxed mb-6">
+        {post.data.description}
+      </p>
+
+      {post.data.tags && post.data.tags.length > 0 && (
+        <div class="flex flex-wrap gap-2 mb-8">
+          {post.data.tags.map(tag => (
+            <a href={`/blog?tag=${tag}`} class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-sm hover:bg-amber-500/30 transition-colors">
+              #{tag}
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <!-- Article Content -->
+    <div class="blog-content prose prose-lg prose-invert max-w-none">
+      <Content />
+    </div>
+
+    <!-- Social Share -->
+    <div class="mt-8 p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+      <h3 class="text-lg font-semibold text-white mb-4">Comparte este artículo</h3>
+      <div class="flex flex-wrap gap-3">
+        <button id="share-twitter" class="flex items-center px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+          Twitter
+        </button>
+        <button id="share-facebook" class="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+          Facebook
+        </button>
+        <button id="share-linkedin" class="flex items-center px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </button>
+        <button id="share-copy" class="flex items-center px-4 py-2 bg-slate-600 hover:bg-slate-700 text-white rounded-lg transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          Copiar enlace
+        </button>
+      </div>
+    </div>
+
+    <!-- Article Footer -->
+    <footer class="mt-12 pt-8 border-t border-slate-700/50">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mr-4">
+            <span class="text-white font-bold text-lg">S</span>
+          </div>
+          <div>
+            <div class="text-white font-semibold">{post.data.author}</div>
+            <div class="text-slate-400 text-sm">Escritor en SOPHIA</div>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <button id="save-article" class="p-2 text-slate-400 hover:text-amber-400 transition-colors" title="Guardar">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Related Articles -->
+      {relatedPosts.length > 0 && (
+        <div class="mt-12">
+          <h3 class="text-xl font-semibold text-white mb-6">Artículos Relacionados</h3>
+          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {relatedPosts.map(relatedPost => (
+              <a href={`/blog/${relatedPost.slug}`} class="group bg-slate-800/50 rounded-lg p-4 border border-slate-700/50 hover:border-amber-400/50 transition-colors">
+                <h4 class="text-white font-medium mb-2 group-hover:text-amber-400 transition-colors">{relatedPost.data.title}</h4>
+                <p class="text-slate-400 text-sm line-clamp-2">{relatedPost.data.description}</p>
+                <div class="flex items-center text-xs text-slate-500 mt-2">
+                  <span>{relatedPost.data.pubDate.toLocaleDateString('es-ES', { month: 'short', day: 'numeric' })}</span>
+                  {relatedPost.data.category && (
+                    <>
+                      <span class="mx-2">•</span>
+                      <span class="capitalize">{relatedPost.data.category}</span>
+                    </>
+                  )}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </footer>
+  </article>
+
+  <!-- Comments Section -->
+  <div class="max-w-4xl mx-auto mt-12">
+    <div class="bg-slate-800/50 rounded-2xl p-6 border border-slate-700/50">
+      <h3 class="text-xl font-semibold text-white mb-6">Comentarios</h3>
+      <div id="comments"></div>
+    </div>
+  </div>
+</BlogLayout>
+
+<script>
+  // Social sharing functionality
+  const shareUrl = window.location.href;
+  const shareTitle = document.title;
+
+  document.getElementById('share-twitter')?.addEventListener('click', () => {
+    window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle)}`, '_blank');
+  });
+
+  document.getElementById('share-facebook')?.addEventListener('click', () => {
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, '_blank');
+  });
+
+  document.getElementById('share-linkedin')?.addEventListener('click', () => {
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`, '_blank');
+  });
+
+  document.getElementById('share-copy')?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      // You could add a toast notification here
+      alert('Enlace copiado al portapapeles');
+    } catch (err) {
+      console.error('Error al copiar:', err);
+    }
+  });
+
+  // Save article functionality (could be extended with localStorage or backend)
+  document.getElementById('save-article')?.addEventListener('click', () => {
+    const saved = localStorage.getItem('saved-articles') || '[]';
+    const savedArticles = JSON.parse(saved);
+
+    if (!savedArticles.includes(window.location.pathname)) {
+      savedArticles.push(window.location.pathname);
+      localStorage.setItem('saved-articles', JSON.stringify(savedArticles));
+      alert('Artículo guardado');
+    } else {
+      alert('Artículo ya guardado');
+    }
+  });
+
+  // Load Utterances comments
+  const loadComments = () => {
+    const script = document.createElement('script');
+    script.src = 'https://utteranc.es/client.js';
+    script.setAttribute('repo', 'tfurtado/sophia-page');
+    script.setAttribute('issue-term', 'pathname');
+    script.setAttribute('theme', 'github-dark');
+    script.setAttribute('crossorigin', 'anonymous');
+    script.async = true;
+
+    document.getElementById('comments')?.appendChild(script);
+  };
+
+  // Load comments when page is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadComments);
+  } else {
+    loadComments();
+  }
+</script>

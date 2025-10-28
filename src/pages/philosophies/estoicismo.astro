@@ -1,0 +1,197 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+---
+
+<Layout title="Estoicismo - SOPHIA" description="Descubre el poder del estoicismo para el desarrollo personal moderno. Aprende a controlar lo que puedes y aceptar lo que no.">
+  <Breadcrumbs items={[
+    { label: "Inicio", href: "/" },
+    { label: "Estoicismo" }
+  ]} />
+
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <!-- Hero Section -->
+    <div class="text-center mb-16" data-aos="fade-up">
+      <div class="w-24 h-24 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-8">
+        <span class="text-4xl">⚖️</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-light text-white mb-6 tracking-wide">
+        Estoicismo
+      </h1>
+      <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+        La filosofía que enseña a distinguir entre lo que podemos controlar y lo que no, cultivando la resiliencia y la sabiduría práctica.
+      </p>
+    </div>
+
+    <!-- Philosophy Overview -->
+    <div class="grid gap-12 lg:grid-cols-2 mb-16">
+      <!-- What is Stoicism -->
+      <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30" data-aos="fade-right">
+        <h2 class="text-2xl font-semibold text-white mb-6">¿Qué es el Estoicismo?</h2>
+        <p class="text-slate-300 leading-relaxed mb-6">
+          El estoicismo es una filosofía práctica nacida en la antigua Grecia y desarrollada en Roma, que enfatiza la virtud, la razón y la aceptación de lo inevitable. Sus enseñanzas han influido en líderes, pensadores y personas comunes durante más de 2.000 años.
+        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="text-center p-4 bg-slate-700/30 rounded-lg">
+            <div class="text-2xl mb-2">🧠</div>
+            <div class="text-sm text-slate-300">Razón</div>
+          </div>
+          <div class="text-center p-4 bg-slate-700/30 rounded-lg">
+            <div class="text-2xl mb-2">💪</div>
+            <div class="text-sm text-slate-300">Virtud</div>
+          </div>
+          <div class="text-center p-4 bg-slate-700/30 rounded-lg">
+            <div class="text-2xl mb-2">🎯</div>
+            <div class="text-sm text-slate-300">Control</div>
+          </div>
+          <div class="text-center p-4 bg-slate-700/30 rounded-lg">
+            <div class="text-2xl mb-2">✅</div>
+            <div class="text-sm text-slate-300">Aceptación</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Figures -->
+      <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30" data-aos="fade-left">
+        <h2 class="text-2xl font-semibold text-white mb-6">Pensadores Estoicos</h2>
+        <div class="space-y-4">
+          <div class="flex items-center p-4 bg-slate-700/30 rounded-lg">
+            <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-lg font-bold text-white">M</span>
+            </div>
+            <div>
+              <h3 class="text-white font-medium">Marco Aurelio</h3>
+              <p class="text-slate-400 text-sm">Emperador romano, autor de "Meditaciones"</p>
+            </div>
+          </div>
+          <div class="flex items-center p-4 bg-slate-700/30 rounded-lg">
+            <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-lg font-bold text-white">E</span>
+            </div>
+            <div>
+              <h3 class="text-white font-medium">Epicteto</h3>
+              <p class="text-slate-400 text-sm">Esclavo liberto, maestro de la dicotomía del control</p>
+            </div>
+          </div>
+          <div class="flex items-center p-4 bg-slate-700/30 rounded-lg">
+            <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mr-4">
+              <span class="text-lg font-bold text-white">S</span>
+            </div>
+            <div>
+              <h3 class="text-white font-medium">Séneca</h3>
+              <p class="text-slate-400 text-sm">Filósofo y dramaturgo, maestro de Nerón</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Principles -->
+    <div class="mb-16" data-aos="fade-up">
+      <h2 class="text-3xl font-light text-white text-center mb-12">Principios Fundamentales</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-gradient-to-br from-amber-500/10 to-orange-500/10 rounded-2xl p-6 border border-amber-400/20">
+          <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mb-4">
+            <span class="text-2xl">🎯</span>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Dicotomía del Control</h3>
+          <p class="text-slate-300 leading-relaxed">
+            Distingue entre lo que puedes controlar (tus acciones, pensamientos, actitudes) y lo que no puedes (acciones de otros, eventos externos).
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl p-6 border border-blue-400/20">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mb-4">
+            <span class="text-2xl">🛡️</span>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Virtud como Felicidad</h3>
+          <p class="text-slate-300 leading-relaxed">
+            La verdadera felicidad proviene de cultivar cuatro virtudes: sabiduría, coraje, justicia y templanza.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-6 border border-green-400/20">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mb-4">
+            <span class="text-2xl">🔄</span>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Aceptación Radical</h3>
+          <p class="text-slate-300 leading-relaxed">
+            Acepta lo inevitable y enfócate en responder virtuosamente a cualquier circunstancia de la vida.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modern Applications -->
+    <div class="mb-16" data-aos="fade-up">
+      <h2 class="text-3xl font-light text-white text-center mb-12">Aplicaciones Modernas</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+          <h3 class="text-xl font-semibold text-white mb-4">En el Trabajo</h3>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2">•</span>
+              <span>Manejar el estrés laboral enfocándote en lo que puedes controlar</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2">•</span>
+              <span>Responder con calma a cambios organizacionales</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2">•</span>
+              <span>Tomar decisiones éticas basadas en principios</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+          <h3 class="text-xl font-semibold text-white mb-4">En las Relaciones</h3>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2">•</span>
+              <span>Aceptar que no puedes cambiar a otros, solo tu respuesta</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2">•</span>
+              <span>Comunicarte con honestidad y compasión</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-amber-400 mr-2">•</span>
+              <span>Cultivar gratitud por las conexiones positivas</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Articles -->
+    <div class="mb-16" data-aos="fade-up">
+      <h2 class="text-3xl font-light text-white text-center mb-12">Artículos sobre Estoicismo</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <a href="/blog/el-estoicismo-en-la-vida-moderna" class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-300">
+          <h3 class="text-lg font-semibold text-white mb-3 group-hover:text-amber-400 transition-colors">El Estoicismo en la Vida Moderna</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Descubre cómo los principios estoicos pueden transformar tu vida cotidiana...</p>
+          <div class="flex items-center text-xs text-slate-500 mt-3">
+            <span>15 ene 2025</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center bg-gradient-to-r from-amber-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30" data-aos="zoom-in">
+      <h2 class="text-2xl font-light text-white mb-4">¿Listo para practicar el Estoicismo?</h2>
+      <p class="text-amber-100/90 leading-relaxed mb-6 max-w-2xl mx-auto">
+        Únete a SOPHIA y comienza tu viaje estoico con el apoyo de IA avanzada que te guía en la aplicación práctica de estos principios antiguos.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/#download" class="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:scale-105">
+          Descargar SOPHIA
+        </a>
+        <a href="/blog?category=estoicismo" class="border border-amber-400/50 hover:border-amber-300 text-amber-100 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 hover:bg-amber-400/10">
+          Más sobre Estoicismo
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

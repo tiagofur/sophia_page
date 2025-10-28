@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Página no encontrada - SOPHIA">
+  <main class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 flex items-center justify-center px-4">
+    <div class="text-center max-w-2xl mx-auto">
+      <!-- Animated 404 -->
+      <div class="mb-8">
+        <div class="text-8xl md:text-9xl font-light text-amber-400 mb-4 animate-pulse">404</div>
+        <div class="w-24 h-24 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
+          <span class="text-3xl">🧠</span>
+        </div>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+        Página no encontrada
+      </h1>
+
+      <p class="text-xl text-slate-300 leading-relaxed mb-8">
+        Lo sentimos, la página que buscas no existe o ha sido movida. Pero no te preocupes, el camino hacia el crecimiento personal continúa.
+      </p>
+
+      <!-- Navigation Options -->
+      <div class="grid gap-4 md:grid-cols-2 mb-8">
+        <a href="/" class="group bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/10">
+          <div class="flex items-center justify-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl">🏠</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Volver al Inicio</h3>
+          <p class="text-slate-400 text-sm">Descubre SOPHIA y comienza tu viaje</p>
+        </a>
+
+        <a href="/blog" class="group bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+          <div class="flex items-center justify-center mb-4">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl">📚</span>
+            </div>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Explorar Blog</h3>
+          <p class="text-slate-400 text-sm">Lee artículos sobre crecimiento personal</p>
+        </a>
+      </div>
+
+      <!-- Search or Contact -->
+      <div class="bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30">
+        <h3 class="text-lg font-semibold text-white mb-4">¿Necesitas ayuda?</h3>
+        <p class="text-slate-300 mb-6">
+          Si crees que esto es un error o necesitas asistencia, no dudes en contactarnos.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/support" class="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105">
+            Centro de Soporte
+          </a>
+          <a href="/documentation" class="border border-amber-400/50 hover:border-amber-300 text-amber-100 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-amber-400/10">
+            Documentación
+          </a>
+        </div>
+      </div>
+
+      <!-- Philosophical Quote -->
+      <div class="mt-12 p-6 bg-gradient-to-r from-amber-500/10 to-orange-500/10 rounded-2xl border border-amber-400/20">
+        <blockquote class="text-amber-100/90 italic text-lg leading-relaxed">
+          "No todas las personas que vagan están perdidas."
+        </blockquote>
+        <cite class="text-amber-300/70 text-sm mt-2 block">— J.R.R. Tolkien</cite>
+      </div>
+    </div>
+  </main>
+</Layout>

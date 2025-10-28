@@ -1,0 +1,85 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  author: string;
+  slug: string;
+  tags?: string[];
+  heroImage?: string;
+}
+
+const { title, description, pubDate, author, slug, tags, heroImage } = Astro.props;
+---
+
+<article class="blog-card bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-300">
+  {heroImage && (
+    <div class="mb-4 rounded-lg overflow-hidden">
+      <img
+        src={heroImage}
+        alt={title}
+        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+  )}
+
+  <div class="flex items-center text-sm text-slate-400 mb-3">
+    <span class="flex items-center">
+      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+      </svg>
+      {pubDate.toLocaleDateString('es-ES', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })}
+    </span>
+    <span class="mx-2">•</span>
+    <span class="flex items-center">
+      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+      </svg>
+      {author}
+    </span>
+  </div>
+
+  <h2 class="text-xl font-semibold text-white mb-3 hover:text-amber-400 transition-colors">
+    <a href={`/blog/${slug}`} class="block">
+      {title}
+    </a>
+  </h2>
+
+  <p class="text-slate-300 leading-relaxed mb-4 line-clamp-3">
+    {description}
+  </p>
+
+  {tags && tags.length > 0 && (
+    <div class="flex flex-wrap gap-2 mb-4">
+      {tags.map(tag => (
+        <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">
+          #{tag}
+        </span>
+      ))}
+    </div>
+  )}
+
+  <a
+    href={`/blog/${slug}`}
+    class="inline-flex items-center text-amber-400 hover:text-amber-300 font-medium transition-colors"
+  >
+    Leer más
+    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+    </svg>
+  </a>
+</article>
+
+<style>
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

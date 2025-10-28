@@ -1,0 +1,80 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="00_overview - Visión y Roadmap de SOPHIA">
+  <main class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+    <!-- Header -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-purple-900/20 to-amber-900/10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex items-center mb-6">
+          <a href="/documentation" class="inline-flex items-center px-4 py-2 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-600/30 hover:border-amber-400/50 transition-all duration-300 mr-4">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            Volver a Documentación
+          </a>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-light text-white mb-4 tracking-wide">
+          00_overview
+        </h1>
+        <p class="text-xl text-amber-100/90 max-w-3xl font-light leading-relaxed">
+          Visión, roadmap y alcance del proyecto SOPHIA
+        </p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16 bg-gradient-to-b from-slate-800 to-slate-900 relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="prose prose-lg prose-invert max-w-none">
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 mb-8">
+            <h2 class="text-2xl font-semibold text-white mb-6">Visión del Proyecto</h2>
+            <p class="text-slate-300 leading-relaxed mb-4">
+              SOPHIA representa una revolución en el desarrollo personal, fusionando la sabiduría milenaria de seis grandes filosofías con la tecnología más avanzada de IA. Nuestra visión es crear una herramienta que no solo ayude a las personas a crecer, sino que transforme fundamentalmente cómo entendemos el desarrollo personal en la era digital.
+            </p>
+            <p class="text-slate-300 leading-relaxed">
+              Creemos que cada experiencia cotidiana contiene semillas de crecimiento, y que la IA puede actuar como un mentor sabio que contextualiza estas experiencias dentro de marcos filosóficos ancestrales.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 mb-8">
+            <h2 class="text-2xl font-semibold text-white mb-6">Alcance del MVP</h2>
+            <p class="text-slate-300 leading-relaxed mb-4">
+              El Producto Mínimo Viable (MVP) de SOPHIA se centra en dos componentes principales:
+            </p>
+            <ul class="text-slate-300 space-y-2 mb-4">
+              <li><strong>El Diario:</strong> Un sistema intuitivo de tarjetas organizadas en 6 categorías para capturar experiencias sin distracciones</li>
+              <li><strong>El Mentor IA:</strong> Google Gemini integrado que analiza entradas y aplica sabiduría de 6 filosofías</li>
+            </ul>
+            <p class="text-slate-300 leading-relaxed">
+              El MVP se enfoca en simplicidad profunda y funcionalidad esencial, evitando características complejas que puedan distraer del objetivo principal: transformar experiencias cotidianas en oportunidades de crecimiento consciente.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+            <h2 class="text-2xl font-semibold text-white mb-6">Roadmap 2025-2026</h2>
+            <div class="space-y-6">
+              <div class="border-l-4 border-amber-400 pl-6">
+                <h3 class="text-lg font-semibold text-amber-400 mb-2">Q4 2025 - Lanzamiento MVP</h3>
+                <p class="text-slate-300">Versión beta con funcionalidades core: diario y mentor IA</p>
+              </div>
+              <div class="border-l-4 border-blue-400 pl-6">
+                <h3 class="text-lg font-semibold text-blue-400 mb-2">Q1 2026 - Reportes y Analytics</h3>
+                <p class="text-slate-300">Dashboard personal y reportes PDF con insights profundos</p>
+              </div>
+              <div class="border-l-4 border-green-400 pl-6">
+                <h3 class="text-lg font-semibold text-green-400 mb-2">Q2 2026 - Comunidad y Social</h3>
+                <p class="text-slate-300">Características sociales y comunidad de practicantes</p>
+              </div>
+              <div class="border-l-4 border-purple-400 pl-6">
+                <h3 class="text-lg font-semibold text-purple-400 mb-2">Q3-Q4 2026 - Expansión Global</h3>
+                <p class="text-slate-300">Soporte multiidioma y expansión internacional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

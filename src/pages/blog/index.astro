@@ -1,0 +1,197 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+
+// Filter out draft posts and sort by publication date (newest first)
+const publishedPosts = posts
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+// Get unique categories
+const categories = [...new Set(publishedPosts.map(post => post.data.category).filter(Boolean))];
+
+// Get current category from URL params
+const url = new URL(Astro.request.url);
+const currentCategory = url.searchParams.get('category');
+const currentTag = url.searchParams.get('tag');
+const searchQuery = url.searchParams.get('q');
+
+// Filter posts based on current filters
+let filteredPosts = publishedPosts;
+
+if (currentCategory) {
+  filteredPosts = filteredPosts.filter(post => post.data.category === currentCategory);
+}
+
+if (currentTag) {
+  filteredPosts = filteredPosts.filter(post => post.data.tags?.includes(currentTag));
+}
+
+if (searchQuery) {
+  const query = searchQuery.toLowerCase();
+  filteredPosts = filteredPosts.filter(post =>
+    post.data.title.toLowerCase().includes(query) ||
+    post.data.description.toLowerCase().includes(query) ||
+    post.data.tags?.some(tag => tag.toLowerCase().includes(query))
+  );
+}
+---
+
+<BlogLayout title="Blog" description="Reflexiones filosóficas y consejos de crecimiento personal">
+  <Breadcrumbs items={[
+    { label: "Blog", href: "/blog" },
+    ...(currentCategory ? [{ label: currentCategory.charAt(0).toUpperCase() + currentCategory.slice(1) }] : []),
+    ...(currentTag ? [{ label: `#${currentTag}` }] : []),
+    ...(searchQuery ? [{ label: `Búsqueda: "${searchQuery}"` }] : [])
+  ]} />
+
+  <div class="mb-12">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-light text-white mb-2">Artículos Recientes</h1>
+        <p class="text-slate-300">Descubre insights sobre crecimiento personal, filosofía y desarrollo de consciencia</p>
+      </div>
+      <div class="text-sm text-slate-400">
+        {filteredPosts.length} artículo{filteredPosts.length !== 1 ? 's' : ''}
+      </div>
+    </div>
+
+    <!-- Search and Filters -->
+    <div class="bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 mb-8">
+      <div class="flex flex-col md:flex-row gap-4">
+        <!-- Search -->
+        <div class="flex-1">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Buscar artículos..."
+            class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+            value={searchQuery || ''}
+          />
+        </div>
+
+        <!-- Category Filter -->
+        <div class="md:w-48">
+          <select id="category-filter" class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent">
+            <option value="">Todas las categorías</option>
+            {categories.map(category => category && (
+              <option value={category} selected={currentCategory === category}>{category.charAt(0).toUpperCase() + category.slice(1)}</option>
+            ))}
+          </select>
+        </div>
+
+        <button id="search-button" class="px-6 py-3 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105">
+          Buscar
+        </button>
+      </div>
+    </div>
+
+    {filteredPosts.length > 0 ? (
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {filteredPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            pubDate={post.data.pubDate}
+            author={post.data.author}
+            slug={post.slug}
+            tags={post.data.tags}
+            heroImage={post.data.heroImage}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="text-center py-16">
+        <div class="w-24 h-24 bg-gradient-to-br from-slate-700 to-slate-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-4xl">🔍</span>
+        </div>
+        <h2 class="text-2xl font-light text-white mb-4">No se encontraron artículos</h2>
+        <p class="text-slate-400 max-w-md mx-auto mb-6">
+          No hay artículos que coincidan con tu búsqueda. Intenta con otros términos o filtros.
+        </p>
+        <button id="clear-filters" class="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105">
+          Limpiar filtros
+        </button>
+      </div>
+    )}
+  </div>
+
+  <!-- Newsletter Signup -->
+  <div class="bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+    <div class="text-center">
+      <h3 class="text-2xl font-light text-white mb-4">Mantente Actualizado</h3>
+      <p class="text-slate-300 mb-6 max-w-2xl mx-auto">
+        Recibe nuestros últimos artículos sobre crecimiento personal, reflexiones filosóficas y consejos para el desarrollo de consciencia directamente en tu correo.
+      </p>
+      <form name="newsletter" method="POST" data-netlify="true" class="max-w-md mx-auto flex gap-4">
+        <input type="hidden" name="form-name" value="newsletter" />
+        <input
+          type="email"
+          name="email"
+          placeholder="Tu correo electrónico"
+          class="flex-1 px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+          required
+        />
+        <button
+          type="submit"
+          class="px-6 py-3 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105"
+        >
+          Suscribirse
+        </button>
+      </form>
+    </div>
+  </div>
+</BlogLayout>
+
+<script>
+  // Search and filter functionality
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const categoryFilter = document.getElementById('category-filter') as HTMLSelectElement;
+  const searchButton = document.getElementById('search-button');
+  const clearFiltersButton = document.getElementById('clear-filters');
+
+  function updateURL() {
+    const params = new URLSearchParams(window.location.search);
+
+    const query = searchInput.value.trim();
+    const category = categoryFilter.value;
+
+    if (query) {
+      params.set('q', query);
+    } else {
+      params.delete('q');
+    }
+
+    if (category) {
+      params.set('category', category);
+    } else {
+      params.delete('category');
+    }
+
+    // Remove tag filter if category is selected
+    if (category) {
+      params.delete('tag');
+    }
+
+    const newURL = `${window.location.pathname}${params.toString() ? '?' + params.toString() : ''}`;
+    window.location.href = newURL;
+  }
+
+  searchButton?.addEventListener('click', updateURL);
+
+  searchInput?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      updateURL();
+    }
+  });
+
+  categoryFilter?.addEventListener('change', updateURL);
+
+  clearFiltersButton?.addEventListener('click', () => {
+    window.location.href = '/blog';
+  });
+</script>

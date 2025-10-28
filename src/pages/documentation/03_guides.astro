@@ -1,0 +1,170 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="03_guides - Guías para Desarrolladores y Usuarios">
+  <main class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+    <!-- Header -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-purple-900/20 to-pink-900/10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex items-center mb-6">
+          <a href="/documentation" class="inline-flex items-center px-4 py-2 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-600/30 hover:border-purple-400/50 transition-all duration-300 mr-4">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            Volver a Documentación
+          </a>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-light text-white mb-4 tracking-wide">
+          03_guides
+        </h1>
+        <p class="text-xl text-purple-100/90 max-w-3xl font-light leading-relaxed">
+          Guías para desarrolladores y usuarios de SOPHIA
+        </p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16 bg-gradient-to-b from-slate-800 to-slate-900 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Developer Guide -->
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+              <div class="w-10 h-10 bg-gradient-to-br from-purple-400 to-pink-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">📖</span>
+              </div>
+              Guía para Desarrolladores
+            </h2>
+
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-lg font-semibold text-purple-400 mb-3">Configuración del Entorno</h3>
+                <div class="bg-slate-900/50 rounded-lg p-4 font-mono text-sm text-slate-300">
+                  <div class="mb-2"># Instalar Flutter</div>
+                  <div class="text-blue-400">flutter doctor</div>
+                  <div class="mt-2 mb-2"># Configurar Supabase</div>
+                  <div class="text-green-400">supabase init</div>
+                  <div class="text-green-400">supabase start</div>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold text-purple-400 mb-3">Arquitectura de Código</h3>
+                <ul class="text-slate-300 text-sm space-y-2">
+                  <li>• <strong>Provider Pattern:</strong> Gestión de estado centralizada</li>
+                  <li>• <strong>Repository Pattern:</strong> Abstracción de datos</li>
+                  <li>• <strong>Clean Architecture:</strong> Separación de responsabilidades</li>
+                  <li>• <strong>Dependency Injection:</strong> Inyección de dependencias</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold text-purple-400 mb-3">Convenciones de Código</h3>
+                <ul class="text-slate-300 text-sm space-y-2">
+                  <li>• Nombres en español para UI</li>
+                  <li>• Comentarios en inglés para código</li>
+                  <li>• Tests unitarios obligatorios</li>
+                  <li>• Code coverage mínimo 80%</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- User Guide -->
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+            <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+              <div class="w-10 h-10 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">👤</span>
+              </div>
+              Guía para Usuarios
+            </h2>
+
+            <div class="space-y-6">
+              <div>
+                <h3 class="text-lg font-semibold text-blue-400 mb-3">Primeros Pasos</h3>
+                <ol class="text-slate-300 text-sm space-y-2">
+                  <li>1. <strong>Descarga la app</strong> desde App Store o Google Play</li>
+                  <li>2. <strong>Crea tu cuenta</strong> con email y contraseña segura</li>
+                  <li>3. <strong>Configura tu perfil</strong> con tus preferencias filosóficas</li>
+                  <li>4. <strong>¡Comienza a escribir!</strong> Tu primera entrada en el diario</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold text-blue-400 mb-3">Categorías del Diario</h3>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-slate-700/50 rounded p-3 text-center">
+                    <div class="text-lg mb-1">📝</div>
+                    <div class="text-xs text-slate-300 font-semibold">Pensamientos</div>
+                    <div class="text-xs text-slate-400">Reflexiones mentales</div>
+                  </div>
+                  <div class="bg-slate-700/50 rounded p-3 text-center">
+                    <div class="text-lg mb-1">💭</div>
+                    <div class="text-xs text-slate-300 font-semibold">Emociones</div>
+                    <div class="text-xs text-slate-400">Estados emocionales</div>
+                  </div>
+                  <div class="bg-slate-700/50 rounded p-3 text-center">
+                    <div class="text-lg mb-1">🎯</div>
+                    <div class="text-xs text-slate-300 font-semibold">Metas</div>
+                    <div class="text-xs text-slate-400">Objetivos y aspiraciones</div>
+                  </div>
+                  <div class="bg-slate-700/50 rounded p-3 text-center">
+                    <div class="text-lg mb-1">🌱</div>
+                    <div class="text-xs text-slate-300 font-semibold">Crecimiento</div>
+                    <div class="text-xs text-slate-400">Aprendizajes y evolución</div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold text-blue-400 mb-3">Interacción con el Mentor IA</h3>
+                <ul class="text-slate-300 text-sm space-y-2">
+                  <li>• <strong>Respuestas contextuales:</strong> Basadas en tus entradas</li>
+                  <li>• <strong>Múltiples perspectivas:</strong> 6 filosofías diferentes</li>
+                  <li>• <strong>Acciones concretas:</strong> Sugerencias prácticas</li>
+                  <li>• <strong>Privacidad total:</strong> Tus datos nunca se comparten</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mt-12 bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+          <h2 class="text-2xl font-semibold text-white mb-6">Preguntas Frecuentes</h2>
+
+          <div class="space-y-6">
+            <div class="border-l-4 border-amber-400 pl-6">
+              <h3 class="text-amber-400 font-semibold mb-2">¿Cómo funciona la IA de SOPHIA?</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Utilizamos Google Gemini, uno de los modelos de IA más avanzados, entrenado específicamente para comprender y aplicar principios filosóficos. Cada respuesta se genera considerando tu contexto personal y la filosofía más relevante para tu situación.
+              </p>
+            </div>
+
+            <div class="border-l-4 border-blue-400 pl-6">
+              <h3 class="text-blue-400 font-semibold mb-2">¿Mis datos están seguros?</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Absolutamente. Utilizamos encriptación de nivel empresarial, servidores en la UE con cumplimiento GDPR completo, y nunca compartimos tus datos personales. Tu privacidad es nuestra prioridad máxima.
+              </p>
+            </div>
+
+            <div class="border-l-4 border-green-400 pl-6">
+              <h3 class="text-green-400 font-semibold mb-2">¿Puedo usar SOPHIA sin conexión a internet?</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Actualmente, la funcionalidad completa requiere conexión para las respuestas del mentor IA. Sin embargo, puedes escribir entradas offline y sincronizarlas cuando recuperes la conexión. Estamos trabajando en funcionalidades offline para futuras versiones.
+              </p>
+            </div>
+
+            <div class="border-l-4 border-purple-400 pl-6">
+              <h3 class="text-purple-400 font-semibold mb-2">¿Cuánto cuesta SOPHIA?</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                El MVP será gratuito durante la fase beta. Planeamos un modelo freemium donde las funcionalidades básicas serán gratuitas, y las avanzadas (como reportes PDF detallados) estarán disponibles en una suscripción premium accesible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

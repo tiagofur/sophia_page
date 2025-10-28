@@ -1,0 +1,29 @@
+{
+  "name": "SOPHIA - Desarrollo Personal con IA",
+  "short_name": "SOPHIA",
+  "description": "Transforma tu vida con sabiduría ancestral e IA avanzada",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait-primary",
+  "categories": ["lifestyle", "productivity", "education"],
+  "lang": "es",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}

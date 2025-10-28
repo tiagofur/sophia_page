@@ -1,0 +1,217 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="04_todos - Backlog y Tareas Pendientes">
+  <main class="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
+    <!-- Header -->
+    <section class="py-16 bg-gradient-to-r from-slate-900 via-orange-900/20 to-red-900/10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex items-center mb-6">
+          <a href="/documentation" class="inline-flex items-center px-4 py-2 bg-slate-800/50 backdrop-blur-sm rounded-full border border-slate-600/30 hover:border-orange-400/50 transition-all duration-300 mr-4">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            Volver a Documentación
+          </a>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-light text-white mb-4 tracking-wide">
+          04_todos
+        </h1>
+        <p class="text-xl text-orange-100/90 max-w-3xl font-light leading-relaxed">
+          Backlog y tareas pendientes del proyecto SOPHIA
+        </p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16 bg-gradient-to-b from-slate-800 to-slate-900 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Current Sprint -->
+        <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 mb-8">
+          <h2 class="text-2xl font-semibold text-white mb-6 flex items-center">
+            <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-white font-bold">🚀</span>
+            </div>
+            Sprint Actual - MVP Core (95% Completado)
+          </h2>
+
+          <div class="space-y-4">
+            <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-lg">
+              <div class="flex items-center">
+                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-white text-xs">✓</span>
+                </div>
+                <span class="text-slate-300">Implementar sistema de diario con 6 categorías</span>
+              </div>
+              <span class="text-green-400 text-sm">Completado</span>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-lg">
+              <div class="flex items-center">
+                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-white text-xs">✓</span>
+                </div>
+                <span class="text-slate-300">Integrar Google Gemini para mentor IA</span>
+              </div>
+              <span class="text-green-400 text-sm">Completado</span>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-lg">
+              <div class="flex items-center">
+                <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-white text-xs">⏳</span>
+                </div>
+                <span class="text-slate-300">Configurar autenticación con Supabase</span>
+              </div>
+              <span class="text-yellow-400 text-sm">En Progreso</span>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-lg">
+              <div class="flex items-center">
+                <div class="w-6 h-6 bg-gray-500 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-white text-xs">○</span>
+                </div>
+                <span class="text-slate-300">Implementar encriptación de datos</span>
+              </div>
+              <span class="text-gray-400 text-sm">Pendiente</span>
+            </div>
+
+            <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-lg">
+              <div class="flex items-center">
+                <div class="w-6 h-6 bg-gray-500 rounded-full flex items-center justify-center mr-3">
+                  <span class="text-white text-xs">○</span>
+                </div>
+                <span class="text-slate-300">Testing y QA del MVP</span>
+              </div>
+              <span class="text-gray-400 text-sm">Pendiente</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backlog -->
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- High Priority -->
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+            <h3 class="text-xl font-semibold text-white mb-6 flex items-center">
+              <div class="w-8 h-8 bg-gradient-to-br from-red-400 to-pink-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">🔴</span>
+              </div>
+              Alta Prioridad
+            </h3>
+
+            <div class="space-y-4">
+              <div class="p-4 bg-slate-900/50 rounded-lg border-l-4 border-red-400">
+                <h4 class="text-red-400 font-semibold mb-2">Dashboard Personal</h4>
+                <p class="text-slate-300 text-sm">Métricas clave y visualización de progreso emocional</p>
+                <div class="flex items-center mt-2">
+                  <span class="px-2 py-1 bg-red-500/20 text-red-300 rounded text-xs mr-2">Q1 2026</span>
+                  <span class="text-xs text-slate-400">Story Points: 21</span>
+                </div>
+              </div>
+
+              <div class="p-4 bg-slate-900/50 rounded-lg border-l-4 border-red-400">
+                <h4 class="text-red-400 font-semibold mb-2">Reportes PDF</h4>
+                <p class="text-slate-300 text-sm">Análisis profesionales con filtros avanzados</p>
+                <div class="flex items-center mt-2">
+                  <span class="px-2 py-1 bg-red-500/20 text-red-300 rounded text-xs mr-2">Q1 2026</span>
+                  <span class="text-xs text-slate-400">Story Points: 13</span>
+                </div>
+              </div>
+
+              <div class="p-4 bg-slate-900/50 rounded-lg border-l-4 border-red-400">
+                <h4 class="text-red-400 font-semibold mb-2">Sincronización Offline</h4>
+                <p class="text-slate-300 text-sm">Funcionalidad completa sin conexión</p>
+                <div class="flex items-center mt-2">
+                  <span class="px-2 py-1 bg-red-500/20 text-red-300 rounded text-xs mr-2">Q1 2026</span>
+                  <span class="text-xs text-slate-400">Story Points: 8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medium Priority -->
+          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+            <h3 class="text-xl font-semibold text-white mb-6 flex items-center">
+              <div class="w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                <span class="text-white font-bold">🟡</span>
+              </div>
+              Media Prioridad
+            </h3>
+
+            <div class="space-y-4">
+              <div class="p-4 bg-slate-900/50 rounded-lg border-l-4 border-yellow-400">
+                <h4 class="text-yellow-400 font-semibold mb-2">Comunidad de Usuarios</h4>
+                <p class="text-slate-300 text-sm">Espacio para compartir experiencias</p>
+                <div class="flex items-center mt-2">
+                  <span class="px-2 py-1 bg-yellow-500/20 text-yellow-300 rounded text-xs mr-2">Q2 2026</span>
+                  <span class="text-xs text-slate-400">Story Points: 34</span>
+                </div>
+              </div>
+
+              <div class="p-4 bg-slate-900/50 rounded-lg border-l-4 border-yellow-400">
+                <h4 class="text-yellow-400 font-semibold mb-2">Soporte Multiidioma</h4>
+                <p class="text-slate-300 text-sm">Interfaz en español, inglés, portugués</p>
+                <div class="flex items-center mt-2">
+                  <span class="px-2 py-1 bg-yellow-500/20 text-yellow-300 rounded text-xs mr-2">Q2 2026</span>
+                  <span class="text-xs text-slate-400">Story Points: 21</span>
+                </div>
+              </div>
+
+              <div class="p-4 bg-slate-900/50 rounded-lg border-l-4 border-yellow-400">
+                <h4 class="text-yellow-400 font-semibold mb-2">Integración Wearables</h4>
+                <p class="text-slate-300 text-sm">Conexión con Apple Watch y Wear OS</p>
+                <div class="flex items-center mt-2">
+                  <span class="px-2 py-1 bg-yellow-500/20 text-yellow-300 rounded text-xs mr-2">Q3 2026</span>
+                  <span class="text-xs text-slate-400">Story Points: 13</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Low Priority / Future -->
+        <div class="mt-8 bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+          <h3 class="text-xl font-semibold text-white mb-6 flex items-center">
+            <div class="w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
+              <span class="text-white font-bold">🔵</span>
+            </div>
+            Futuras Consideraciones
+          </h3>
+
+          <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div class="p-4 bg-slate-900/50 rounded-lg">
+              <h4 class="text-blue-400 font-semibold mb-2">Web App</h4>
+              <p class="text-slate-300 text-sm">Versión completa para navegador</p>
+            </div>
+
+            <div class="p-4 bg-slate-900/50 rounded-lg">
+              <h4 class="text-blue-400 font-semibold mb-2">API Pública</h4>
+              <p class="text-slate-300 text-sm">Para integraciones de terceros</p>
+            </div>
+
+            <div class="p-4 bg-slate-900/50 rounded-lg">
+              <h4 class="text-blue-400 font-semibold mb-2">Machine Learning</h4>
+              <p class="text-slate-300 text-sm">Modelos personalizados por usuario</p>
+            </div>
+
+            <div class="p-4 bg-slate-900/50 rounded-lg">
+              <h4 class="text-blue-400 font-semibold mb-2">Realidad Virtual</h4>
+              <p class="text-slate-300 text-sm">Experiencias inmersivas filosóficas</p>
+            </div>
+
+            <div class="p-4 bg-slate-900/50 rounded-lg">
+              <h4 class="text-blue-400 font-semibold mb-2">Integración Terapia</h4>
+              <p class="text-slate-300 text-sm">Herramientas para profesionales</p>
+            </div>
+
+            <div class="p-4 bg-slate-900/50 rounded-lg">
+              <h4 class="text-blue-400 font-semibold mb-2">Educación</h4>
+              <p class="text-slate-300 text-sm">Módulos para instituciones educativas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
