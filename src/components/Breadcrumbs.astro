@@ -10,7 +10,7 @@ export interface Props {
 const { items } = Astro.props;
 ---
 
-<nav class="flex items-center space-x-2 text-sm text-slate-400 mb-8" aria-label="Breadcrumb">
+<nav class="flex items-center space-x-2 text-sm text-slate-600 dark:text-slate-400 mb-8" aria-label="Breadcrumb">
   <a href="/" class="hover:text-amber-400 transition-colors">Inicio</a>
   {items.map((item, index) => (
     <>
@@ -20,7 +20,7 @@ const { items } = Astro.props;
       {item.href ? (
         <a href={item.href} class="hover:text-amber-400 transition-colors">{item.label}</a>
       ) : (
-        <span class="text-slate-300">{item.label}</span>
+        <span class="text-slate-700 dark:text-slate-300">{item.label}</span>
       )}
     </>
   ))}

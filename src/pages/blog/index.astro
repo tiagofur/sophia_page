@@ -52,16 +52,16 @@ if (searchQuery) {
   <div class="mb-12">
     <div class="flex items-center justify-between mb-8">
       <div>
-        <h1 class="text-3xl md:text-4xl font-light text-white mb-2">Artículos Recientes</h1>
-        <p class="text-slate-300">Descubre insights sobre crecimiento personal, filosofía y desarrollo de consciencia</p>
+        <h1 class="text-3xl md:text-4xl font-light text-slate-900 dark:text-white mb-2">Artículos Recientes</h1>
+        <p class="text-slate-600 dark:text-slate-300">Descubre insights sobre crecimiento personal, filosofía y desarrollo de consciencia</p>
       </div>
-      <div class="text-sm text-slate-400">
+      <div class="text-sm text-slate-500 dark:text-slate-400">
         {filteredPosts.length} artículo{filteredPosts.length !== 1 ? 's' : ''}
       </div>
     </div>
 
     <!-- Search and Filters -->
-    <div class="bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 mb-8">
+    <div class="bg-gradient-to-r from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 mb-8">
       <div class="flex flex-col md:flex-row gap-4">
         <!-- Search -->
         <div class="flex-1">
@@ -69,14 +69,14 @@ if (searchQuery) {
             type="text"
             id="search-input"
             placeholder="Buscar artículos..."
-            class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+            class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
             value={searchQuery || ''}
           />
         </div>
 
         <!-- Category Filter -->
         <div class="md:w-48">
-          <select id="category-filter" class="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent">
+          <select id="category-filter" class="w-full px-4 py-3 bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent">
             <option value="">Todas las categorías</option>
             {categories.map(category => category && (
               <option value={category} selected={currentCategory === category}>{category.charAt(0).toUpperCase() + category.slice(1)}</option>
@@ -106,11 +106,11 @@ if (searchQuery) {
       </div>
     ) : (
       <div class="text-center py-16">
-        <div class="w-24 h-24 bg-gradient-to-br from-slate-700 to-slate-600 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div class="w-24 h-24 bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-600 rounded-full flex items-center justify-center mx-auto mb-6">
           <span class="text-4xl">🔍</span>
         </div>
-        <h2 class="text-2xl font-light text-white mb-4">No se encontraron artículos</h2>
-        <p class="text-slate-400 max-w-md mx-auto mb-6">
+        <h2 class="text-2xl font-light text-slate-900 dark:text-white mb-4">No se encontraron artículos</h2>
+        <p class="text-slate-500 dark:text-slate-400 max-w-md mx-auto mb-6">
           No hay artículos que coincidan con tu búsqueda. Intenta con otros términos o filtros.
         </p>
         <button id="clear-filters" class="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105">
@@ -121,10 +121,10 @@ if (searchQuery) {
   </div>
 
   <!-- Newsletter Signup -->
-  <div class="bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30">
+  <div class="bg-gradient-to-r from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-200/30 dark:border-slate-600/30">
     <div class="text-center">
-      <h3 class="text-2xl font-light text-white mb-4">Mantente Actualizado</h3>
-      <p class="text-slate-300 mb-6 max-w-2xl mx-auto">
+      <h3 class="text-2xl font-light text-slate-900 dark:text-white mb-4">Mantente Actualizado</h3>
+      <p class="text-slate-600 dark:text-slate-300 mb-6 max-w-2xl mx-auto">
         Recibe nuestros últimos artículos sobre crecimiento personal, reflexiones filosóficas y consejos para el desarrollo de consciencia directamente en tu correo.
       </p>
       <form name="newsletter" method="POST" data-netlify="true" class="max-w-md mx-auto flex gap-4">
@@ -133,7 +133,7 @@ if (searchQuery) {
           type="email"
           name="email"
           placeholder="Tu correo electrónico"
-          class="flex-1 px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+          class="flex-1 px-4 py-3 bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-lg text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
           required
         />
         <button

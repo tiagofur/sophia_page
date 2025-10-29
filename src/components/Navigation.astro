@@ -69,9 +69,11 @@
   const themeToggle = document.getElementById('theme-toggle');
   const html = document.documentElement;
 
-  // Check for saved theme preference or default to dark mode
-  const savedTheme = localStorage.getItem('theme') || 'dark';
-  html.classList.toggle('dark', savedTheme === 'dark');
+  // Check for saved theme preference or default to system preference
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+  html.classList.toggle('dark', initialTheme === 'dark');
 
   themeToggle?.addEventListener('click', () => {
     const isDark = html.classList.contains('dark');

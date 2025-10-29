@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Hero Section: El Mentor Filosófico -->
     <section class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
       <!-- Animated Background: Philosophical Fusion -->
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-amber-900/10">
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-100 via-purple-100/20 to-amber-100/10 dark:from-slate-900 dark:via-purple-900/20 dark:to-amber-900/10">
         <div class="absolute inset-0 opacity-30">
           <div class="philosophical-fusion-animation"></div>
         </div>
@@ -24,10 +24,10 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="relative z-10 max-w-6xl mx-auto">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-light tracking-wide mb-6 text-white" data-aos="fade-down" data-aos-duration="1500">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-light tracking-wide mb-6 text-slate-900 dark:text-white" data-aos="fade-down" data-aos-duration="1500">
           Transforma cada experiencia de tu vida en una lección de crecimiento
         </h1>
-        <p class="text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto text-amber-100/90 mb-12 font-light leading-relaxed" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
+        <p class="text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto text-amber-700/90 dark:text-amber-100/90 mb-12 font-light leading-relaxed" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
           usando la sabiduría milenaria de todas las filosofías, con IA que actúa como tu mentor personal.
         </p>
 
@@ -52,7 +52,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Value Proposition: El Diario y El Mentor -->
-    <section id="philosophies" class="py-24 bg-gradient-to-b from-slate-900 to-slate-800 relative overflow-hidden">
+    <section id="philosophies" class="py-24 bg-gradient-to-b from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-800 relative overflow-hidden">
       <!-- Background Pattern -->
       <div class="absolute inset-0 opacity-5">
         <div class="philosophy-pattern"></div>
@@ -60,10 +60,10 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+          <h2 class="text-4xl md:text-5xl font-light text-slate-900 dark:text-white mb-6 tracking-wide">
             Tus Herramientas para el Crecimiento Consciente
           </h2>
-          <p class="text-xl text-amber-100/80 max-w-3xl mx-auto font-light leading-relaxed">
+          <p class="text-xl text-amber-700/80 dark:text-amber-100/80 max-w-3xl mx-auto font-light leading-relaxed">
             SOPHIA combina la simplicidad profunda con la sabiduría de seis grandes filosofías, guiada por IA avanzada
           </p>
         </div>
@@ -71,7 +71,7 @@ import Layout from '../layouts/Layout.astro';
         <!-- Interactive Philosophy Cards -->
         <div class="grid gap-8 lg:grid-cols-2 mb-16">
           <!-- El Diario: Simplicidad Profunda -->
-          <div class="group relative bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10" data-aos="fade-right" data-aos-delay="200">
+          <div class="group relative bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10" data-aos="fade-right" data-aos-delay="200">
             <div class="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-orange-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div class="relative z-10">
               <div class="flex items-center mb-6">
@@ -80,34 +80,34 @@ import Layout from '../layouts/Layout.astro';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                   </svg>
                 </div>
-                <h3 class="text-2xl font-light text-white">El Diario: Simplicidad Profunda</h3>
+                <h3 class="text-2xl font-light text-slate-900 dark:text-white">El Diario: Simplicidad Profunda</h3>
               </div>
-              <p class="text-slate-300 mb-6 leading-relaxed">
+              <p class="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
                 Un sistema de tarjetas intuitivo organizado en 6 categorías. Captura momentos sin distracciones, convirtiendo tus experiencias cotidianas en oportunidades de introspección.
               </p>
               <div class="grid grid-cols-2 gap-3">
-                <div class="bg-slate-700/50 rounded-lg p-3 text-center">
+                <div class="bg-slate-200/50 dark:bg-slate-700/50 rounded-lg p-3 text-center">
                   <div class="text-2xl mb-1">📝</div>
-                  <div class="text-sm text-slate-300">Pensamientos</div>
+                  <div class="text-sm text-slate-700 dark:text-slate-300">Pensamientos</div>
                 </div>
-                <div class="bg-slate-700/50 rounded-lg p-3 text-center">
+                <div class="bg-slate-200/50 dark:bg-slate-700/50 rounded-lg p-3 text-center">
                   <div class="text-2xl mb-1">💭</div>
-                  <div class="text-sm text-slate-300">Emociones</div>
+                  <div class="text-sm text-slate-700 dark:text-slate-300">Emociones</div>
                 </div>
-                <div class="bg-slate-700/50 rounded-lg p-3 text-center">
+                <div class="bg-slate-200/50 dark:bg-slate-700/50 rounded-lg p-3 text-center">
                   <div class="text-2xl mb-1">🎯</div>
-                  <div class="text-sm text-slate-300">Metas</div>
+                  <div class="text-sm text-slate-700 dark:text-slate-300">Metas</div>
                 </div>
-                <div class="bg-slate-700/50 rounded-lg p-3 text-center">
+                <div class="bg-slate-200/50 dark:bg-slate-700/50 rounded-lg p-3 text-center">
                   <div class="text-2xl mb-1">🌱</div>
-                  <div class="text-sm text-slate-300">Crecimiento</div>
+                  <div class="text-sm text-slate-700 dark:text-slate-300">Crecimiento</div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- El Mentor: Sabiduría Personalizada -->
-          <div class="group relative bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10" data-aos="fade-left" data-aos-delay="400">
+          <div class="group relative bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10" data-aos="fade-left" data-aos-delay="400">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div class="relative z-10">
               <div class="flex items-center mb-6">
@@ -116,47 +116,47 @@ import Layout from '../layouts/Layout.astro';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m12.728 0l-.707.707M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                   </svg>
                 </div>
-                <h3 class="text-2xl font-light text-white">El Mentor: Sabiduría Personalizada</h3>
+                <h3 class="text-2xl font-light text-slate-900 dark:text-white">El Mentor: Sabiduría Personalizada</h3>
               </div>
-              <p class="text-slate-300 mb-6 leading-relaxed">
+              <p class="text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
                 IA avanzada con Google Gemini que analiza tus entradas y aplica la sabiduría de seis filosofías para ofrecerte perspectivas únicas y accionables.
               </p>
               <!-- Interactive Philosophy Selector -->
               <div class="space-y-3">
-                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-700/50 transition-colors" data-philosophy="stoicism">
+                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-200/50 dark:hover:bg-slate-700/50 transition-colors" data-philosophy="stoicism">
                   <div class="flex items-center justify-between">
-                    <span class="text-slate-300 group-hover/item:text-amber-400 transition-colors">Estoicismo ⚖️</span>
-                    <span class="text-xs text-slate-500 opacity-0 group-hover/item:opacity-100 transition-opacity">Resiliencia ante la adversidad</span>
+                    <span class="text-slate-700 dark:text-slate-300 group-hover/item:text-amber-400 transition-colors">Estoicismo ⚖️</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 opacity-0 group-hover/item:opacity-100 transition-opacity">Resiliencia ante la adversidad</span>
                   </div>
                 </div>
-                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-700/50 transition-colors" data-philosophy="buddhism">
+                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-200/50 dark:hover:bg-slate-700/50 transition-colors" data-philosophy="buddhism">
                   <div class="flex items-center justify-between">
-                    <span class="text-slate-300 group-hover/item:text-amber-400 transition-colors">Budismo 🕉️</span>
-                    <span class="text-xs text-slate-500 opacity-0 group-hover/item:opacity-100 transition-opacity">Atención plena y desapego</span>
+                    <span class="text-slate-700 dark:text-slate-300 group-hover/item:text-amber-400 transition-colors">Budismo 🕉️</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 opacity-0 group-hover/item:opacity-100 transition-opacity">Atención plena y desapego</span>
                   </div>
                 </div>
-                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-700/50 transition-colors" data-philosophy="taoism">
+                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-200/50 dark:hover:bg-slate-700/50 transition-colors" data-philosophy="taoism">
                   <div class="flex items-center justify-between">
-                    <span class="text-slate-300 group-hover/item:text-amber-400 transition-colors">Taoísmo ☯️</span>
-                    <span class="text-xs text-slate-500 opacity-0 group-hover/item:opacity-100 transition-opacity">Fluir con los acontecimientos</span>
+                    <span class="text-slate-700 dark:text-slate-300 group-hover/item:text-amber-400 transition-colors">Taoísmo ☯️</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 opacity-0 group-hover/item:opacity-100 transition-opacity">Fluir con los acontecimientos</span>
                   </div>
                 </div>
-                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-700/50 transition-colors" data-philosophy="zen">
+                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-200/50 dark:hover:bg-slate-700/50 transition-colors" data-philosophy="zen">
                   <div class="flex items-center justify-between">
-                    <span class="text-slate-300 group-hover/item:text-amber-400 transition-colors">Zen ☸️</span>
-                    <span class="text-xs text-slate-500 opacity-0 group-hover/item:opacity-100 transition-opacity">Claridad en la simplicidad</span>
+                    <span class="text-slate-700 dark:text-slate-300 group-hover/item:text-amber-400 transition-colors">Zen ☸️</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 opacity-0 group-hover/item:opacity-100 transition-opacity">Claridad en la simplicidad</span>
                   </div>
                 </div>
-                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-700/50 transition-colors" data-philosophy="existentialism">
+                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-200/50 dark:hover:bg-slate-700/50 transition-colors" data-philosophy="existentialism">
                   <div class="flex items-center justify-between">
-                    <span class="text-slate-300 group-hover/item:text-amber-400 transition-colors">Existencialismo 🎭</span>
-                    <span class="text-xs text-slate-500 opacity-0 group-hover/item:opacity-100 transition-opacity">Libertad y responsabilidad</span>
+                    <span class="text-slate-700 dark:text-slate-300 group-hover/item:text-amber-400 transition-colors">Existencialismo 🎭</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 opacity-0 group-hover/item:opacity-100 transition-opacity">Libertad y responsabilidad</span>
                   </div>
                 </div>
-                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-700/50 transition-colors" data-philosophy="humanism">
+                <div class="philosophy-item group/item cursor-pointer p-3 rounded-lg hover:bg-slate-200/50 dark:hover:bg-slate-700/50 transition-colors" data-philosophy="humanism">
                   <div class="flex items-center justify-between">
-                    <span class="text-slate-300 group-hover/item:text-amber-400 transition-colors">Humanismo ❤️</span>
-                    <span class="text-xs text-slate-500 opacity-0 group-hover/item:opacity-100 transition-opacity">Potencial humano y empatía</span>
+                    <span class="text-slate-700 dark:text-slate-300 group-hover/item:text-amber-400 transition-colors">Humanismo ❤️</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 opacity-0 group-hover/item:opacity-100 transition-opacity">Potencial humano y empatía</span>
                   </div>
                 </div>
               </div>
@@ -166,22 +166,22 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Growth Metrics Preview -->
         <div class="text-center" data-aos="fade-up" data-aos-delay="600">
-          <h3 class="text-2xl font-light text-white mb-8">Crecimiento Medible con Reportes Profesionales</h3>
+          <h3 class="text-2xl font-light text-slate-900 dark:text-white mb-8">Crecimiento Medible con Reportes Profesionales</h3>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-xl p-6 border border-slate-600/30">
+            <div class="bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-xl p-6 border border-slate-300/30 dark:border-slate-600/30">
               <div class="text-3xl mb-2">📊</div>
-              <h4 class="text-lg font-semibold text-white mb-2">Dashboard Personal</h4>
-              <p class="text-slate-400 text-sm">Métricas clave de tu progreso emocional y patrones de crecimiento</p>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Dashboard Personal</h4>
+              <p class="text-slate-600 dark:text-slate-400 text-sm">Métricas clave de tu progreso emocional y patrones de crecimiento</p>
             </div>
-            <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-xl p-6 border border-slate-600/30">
+            <div class="bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-xl p-6 border border-slate-300/30 dark:border-slate-600/30">
               <div class="text-3xl mb-2">📄</div>
-              <h4 class="text-lg font-semibold text-white mb-2">Reportes PDF</h4>
-              <p class="text-slate-400 text-sm">Análisis profesionales de 4 páginas con filtros avanzados</p>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Reportes PDF</h4>
+              <p class="text-slate-600 dark:text-slate-400 text-sm">Análisis profesionales de 4 páginas con filtros avanzados</p>
             </div>
-            <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-xl p-6 border border-slate-600/30">
+            <div class="bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-xl p-6 border border-slate-300/30 dark:border-slate-600/30">
               <div class="text-3xl mb-2">🔄</div>
-              <h4 class="text-lg font-semibold text-white mb-2">Tendencias</h4>
-              <p class="text-slate-400 text-sm">Visualización de evolución temporal con insights profundos</p>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Tendencias</h4>
+              <p class="text-slate-600 dark:text-slate-400 text-sm">Visualización de evolución temporal con insights profundos</p>
             </div>
           </div>
         </div>
@@ -189,14 +189,14 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Technology Showcase: Arquitectura de Vanguardia -->
-    <section id="technology" class="py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative">
-      <div class="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-purple-900/10"></div>
+    <section id="technology" class="py-24 bg-gradient-to-b from-slate-200 to-slate-100 dark:from-slate-800 dark:to-slate-900 relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-100/10 via-transparent to-purple-100/10 dark:from-blue-900/10 dark:via-transparent dark:to-purple-900/10"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+          <h2 class="text-4xl md:text-5xl font-light text-slate-900 dark:text-white mb-6 tracking-wide">
             Tecnología de Vanguardia al Servicio de la Sabiduría
           </h2>
-          <p class="text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+          <p class="text-xl text-slate-700 dark:text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
             Una arquitectura robusta que combina Flutter, IA avanzada y herramientas empresariales para ofrecerte una experiencia fluida y segura
           </p>
         </div>
@@ -204,113 +204,113 @@ import Layout from '../layouts/Layout.astro';
         <!-- Tech Stack Grid -->
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
           <!-- Flutter -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10" data-aos="fade-up" data-aos-delay="200">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10" data-aos="fade-up" data-aos-delay="200">
             <div class="flex items-center mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                 <span class="text-2xl">📱</span>
               </div>
               <div>
-                <h3 class="text-xl font-semibold text-white">Flutter</h3>
-                <p class="text-slate-400 text-sm">Framework multiplataforma</p>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Flutter</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm">Framework multiplataforma</p>
               </div>
             </div>
-            <p class="text-slate-300 leading-relaxed">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               Experiencia nativa fluida en iOS, Android, Web y Desktop con animaciones optimizadas a 60 FPS. Una interfaz idéntica y de alta calidad sin importar dónde la uses.
             </p>
           </div>
 
           <!-- Google Gemini AI -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10" data-aos="fade-up" data-aos-delay="300">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10" data-aos="fade-up" data-aos-delay="300">
             <div class="flex items-center mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                 <span class="text-2xl">🤖</span>
               </div>
               <div>
-                <h3 class="text-xl font-semibold text-white">Google Gemini</h3>
-                <p class="text-slate-400 text-sm">IA de clase mundial</p>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Google Gemini</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm">IA de clase mundial</p>
               </div>
             </div>
-            <p class="text-slate-300 leading-relaxed">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               El "cerebro" de SOPHIA. Utiliza prompts especializados para analizar tus experiencias y aplicar la sabiduría de las 6 filosofías a tu contexto personal único.
             </p>
           </div>
 
           <!-- Supabase + PostgreSQL -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10" data-aos="fade-up" data-aos-delay="400">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10" data-aos="fade-up" data-aos-delay="400">
             <div class="flex items-center mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                 <span class="text-2xl">🛡️</span>
               </div>
               <div>
-                <h3 class="text-xl font-semibold text-white">Supabase + PostgreSQL</h3>
-                <p class="text-slate-400 text-sm">Backend seguro y escalable</p>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Supabase + PostgreSQL</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm">Backend seguro y escalable</p>
               </div>
             </div>
-            <p class="text-slate-300 leading-relaxed">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               Privacidad absoluta para tus reflexiones más íntimas. Autenticación robusta, encriptación de datos y una infraestructura que garantiza la confidencialidad de tu viaje personal.
             </p>
           </div>
 
           <!-- Sentry + Mixpanel -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-orange-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/10" data-aos="fade-up" data-aos-delay="500">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-orange-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/10" data-aos="fade-up" data-aos-delay="500">
             <div class="flex items-center mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                 <span class="text-2xl">📊</span>
               </div>
               <div>
-                <h3 class="text-xl font-semibold text-white">Sentry + Mixpanel</h3>
-                <p class="text-slate-400 text-sm">Monitoreo y análisis empresarial</p>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Sentry + Mixpanel</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm">Monitoreo y análisis empresarial</p>
               </div>
             </div>
-            <p class="text-slate-300 leading-relaxed">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               Herramientas de nivel empresarial que garantizan estabilidad, rendimiento y una comprensión profunda del comportamiento del usuario para mejoras continuas.
             </p>
           </div>
 
           <!-- Philosophy Integration -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 md:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="600">
             <div class="flex items-center mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                 <span class="text-2xl">📚</span>
               </div>
               <div>
-                <h3 class="text-xl font-semibold text-white">6 Filosofías Integradas</h3>
-                <p class="text-slate-400 text-sm">Sabiduría milenaria aplicada</p>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white">6 Filosofías Integradas</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm">Sabiduría milenaria aplicada</p>
               </div>
             </div>
-            <p class="text-slate-300 leading-relaxed mb-4">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
               Estoicismo, Budismo, Taoísmo, Zen, Existencialismo y Humanismo se fusionan con IA para ofrecerte perspectivas únicas y accionables para cada situación de tu vida.
             </p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Estoicismo</span>
-              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Budismo</span>
-              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Taoísmo</span>
-              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Zen</span>
-              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Existencialismo</span>
-              <span class="px-3 py-1 bg-amber-500/20 text-amber-300 rounded-full text-xs">Humanismo</span>
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-800 dark:text-amber-300 rounded-full text-xs">Estoicismo</span>
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-800 dark:text-amber-300 rounded-full text-xs">Budismo</span>
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-800 dark:text-amber-300 rounded-full text-xs">Taoísmo</span>
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-800 dark:text-amber-300 rounded-full text-xs">Zen</span>
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-800 dark:text-amber-300 rounded-full text-xs">Existencialismo</span>
+              <span class="px-3 py-1 bg-amber-500/20 text-amber-800 dark:text-amber-300 rounded-full text-xs">Humanismo</span>
             </div>
           </div>
         </div>
 
         <!-- Performance Metrics -->
         <div class="text-center" data-aos="fade-up" data-aos-delay="700">
-          <h3 class="text-2xl font-light text-white mb-8">Rendimiento de Nivel Empresarial</h3>
+          <h3 class="text-2xl font-light text-slate-900 dark:text-white mb-8">Rendimiento de Nivel Empresarial</h3>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-600/30">
-              <div class="text-3xl font-bold text-blue-400 mb-2">60 FPS</div>
-              <div class="text-slate-400 text-sm">Animaciones fluidas</div>
+            <div class="bg-slate-200/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-300/30 dark:border-slate-600/30">
+              <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">60 FPS</div>
+              <div class="text-slate-600 dark:text-slate-400 text-sm">Animaciones fluidas</div>
             </div>
-            <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-600/30">
-              <div class="text-3xl font-bold text-green-400 mb-2">&lt;1s</div>
-              <div class="text-slate-400 text-sm">Tiempo de arranque</div>
+            <div class="bg-slate-200/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-300/30 dark:border-slate-600/30">
+              <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">&lt;1s</div>
+              <div class="text-slate-600 dark:text-slate-400 text-sm">Tiempo de arranque</div>
             </div>
-            <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-600/30">
-              <div class="text-3xl font-bold text-purple-400 mb-2">99.9%</div>
-              <div class="text-slate-400 text-sm">Disponibilidad</div>
+            <div class="bg-slate-200/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-300/30 dark:border-slate-600/30">
+              <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">99.9%</div>
+              <div class="text-slate-600 dark:text-slate-400 text-sm">Disponibilidad</div>
             </div>
-            <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-600/30">
-              <div class="text-3xl font-bold text-amber-400 mb-2">100%</div>
-              <div class="text-slate-400 text-sm">Privacidad garantizada</div>
+            <div class="bg-slate-200/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-300/30 dark:border-slate-600/30">
+              <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">100%</div>
+              <div class="text-slate-600 dark:text-slate-400 text-sm">Privacidad garantizada</div>
             </div>
           </div>
         </div>
@@ -318,14 +318,14 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Privacy and Trust: Confianza Absoluta -->
-    <section id="privacy" class="py-24 bg-gradient-to-b from-slate-900 to-slate-800 relative">
-      <div class="absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-transparent to-teal-900/10"></div>
+    <section id="privacy" class="py-24 bg-gradient-to-b from-slate-100 to-slate-200 dark:from-slate-900 dark:to-slate-800 relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-emerald-100/10 via-transparent to-teal-100/10 dark:from-emerald-900/10 dark:via-transparent dark:to-teal-900/10"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+          <h2 class="text-4xl md:text-5xl font-light text-slate-900 dark:text-white mb-6 tracking-wide">
             Privacidad Absoluta: Tu Santuario Digital
           </h2>
-          <p class="text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+          <p class="text-xl text-slate-700 dark:text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
             Tus reflexiones más íntimas están protegidas con la tecnología más avanzada. La introspección personal exige confianza total.
           </p>
         </div>
@@ -333,81 +333,81 @@ import Layout from '../layouts/Layout.astro';
         <!-- Trust Pillars -->
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-16">
           <!-- Data Security -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10" data-aos="fade-up" data-aos-delay="200">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-emerald-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10" data-aos="fade-up" data-aos-delay="200">
             <div class="flex items-center mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-white">Encriptación de Nivel Empresarial</h3>
+              <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Encriptación de Nivel Empresarial</h3>
             </div>
-            <p class="text-slate-300 leading-relaxed">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               Toda tu información está protegida con estándares de encriptación que superan los requisitos de las instituciones financieras más exigentes.
             </p>
           </div>
 
           <!-- No Data Sharing -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10" data-aos="fade-up" data-aos-delay="300">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10" data-aos="fade-up" data-aos-delay="300">
             <div class="flex items-center mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-white">Sin Compartir Datos</h3>
+              <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Sin Compartir Datos</h3>
             </div>
-            <p class="text-slate-300 leading-relaxed">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               Tus datos personales nunca se venden, comparten o utilizan para fines comerciales. Tu privacidad es nuestro compromiso sagrado.
             </p>
           </div>
 
           <!-- Local Processing -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10" data-aos="fade-up" data-aos-delay="400">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10" data-aos="fade-up" data-aos-delay="400">
             <div class="flex items-center mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
                 </svg>
               </div>
-              <h3 class="text-xl font-semibold text-white">Procesamiento Seguro</h3>
+              <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Procesamiento Seguro</h3>
             </div>
-            <p class="text-slate-300 leading-relaxed">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
               Utilizamos servidores en la UE con cumplimiento GDPR completo. Tus datos nunca salen de jurisdicciones con protección de privacidad robusta.
             </p>
           </div>
         </div>
 
         <!-- Trust Signals -->
-        <div class="bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30" data-aos="fade-up" data-aos-delay="500">
+        <div class="bg-gradient-to-r from-slate-200/50 to-slate-100/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-300/30 dark:border-slate-600/30" data-aos="fade-up" data-aos-delay="500">
           <div class="text-center mb-8">
-            <h3 class="text-2xl font-light text-white mb-4">Certificaciones y Cumplimiento</h3>
-            <p class="text-slate-300">SOPHIA cumple con los más altos estándares de seguridad y privacidad</p>
+            <h3 class="text-2xl font-light text-slate-900 dark:text-white mb-4">Certificaciones y Cumplimiento</h3>
+            <p class="text-slate-700 dark:text-slate-300">SOPHIA cumple con los más altos estándares de seguridad y privacidad</p>
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span class="text-white font-bold text-lg">GDPR</span>
               </div>
-              <div class="text-slate-400 text-sm">Reglamento General de Protección de Datos</div>
+              <div class="text-slate-600 dark:text-slate-400 text-sm">Reglamento General de Protección de Datos</div>
             </div>
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span class="text-white font-bold text-lg">ISO</span>
               </div>
-              <div class="text-slate-400 text-sm">27001 Certificado</div>
+              <div class="text-slate-600 dark:text-slate-400 text-sm">27001 Certificado</div>
             </div>
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span class="text-white font-bold text-lg">SOC2</span>
               </div>
-              <div class="text-slate-400 text-sm">Type II Compliant</div>
+              <div class="text-slate-600 dark:text-slate-400 text-sm">Type II Compliant</div>
             </div>
             <div class="text-center">
               <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-3">
                 <span class="text-white font-bold text-lg">HIPAA</span>
               </div>
-              <div class="text-slate-400 text-sm">Compatible con Salud</div>
+              <div class="text-slate-600 dark:text-slate-400 text-sm">Compatible con Salud</div>
             </div>
           </div>
         </div>
@@ -415,16 +415,16 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Biblioteca de Sabiduría: Transparencia Radical -->
-    <section id="biblioteca" class="py-24 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+    <section id="biblioteca" class="py-24 bg-gradient-to-b from-slate-200 to-slate-100 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
       <div class="absolute inset-0 opacity-5">
         <div class="biblioteca-pattern"></div>
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+          <h2 class="text-4xl md:text-5xl font-light text-slate-900 dark:text-white mb-6 tracking-wide">
             Biblioteca de Sabiduría: Transparencia Total
           </h2>
-          <p class="text-xl text-amber-100/80 max-w-3xl mx-auto font-light leading-relaxed">
+          <p class="text-xl text-amber-700/80 dark:text-amber-100/80 max-w-3xl mx-auto font-light leading-relaxed">
             Accede a toda la documentación del proyecto. Una transparencia radical que demuestra nuestro compromiso con la excelencia y la confianza.
           </p>
         </div>
@@ -432,106 +432,106 @@ import Layout from '../layouts/Layout.astro';
         <!-- Documentation Grid -->
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
           <!-- Overview -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="200">
             <div class="flex items-center mb-4">
               <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg flex items-center justify-center mr-3">
                 <span class="text-white font-bold">📋</span>
               </div>
-              <h3 class="text-lg font-semibold text-white">00_overview</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">00_overview</h3>
             </div>
-            <p class="text-slate-400 text-sm mb-3">Visión, roadmap y alcance del proyecto</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Visión, roadmap y alcance del proyecto</p>
             <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">vision.md</span>
-              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">roadmap.md</span>
-              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">introduction.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-700 dark:text-amber-300 rounded text-xs">vision.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-700 dark:text-amber-300 rounded text-xs">roadmap.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-700 dark:text-amber-300 rounded text-xs">introduction.md</span>
             </div>
           </div>
 
           <!-- Features -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="300">
             <div class="flex items-center mb-4">
               <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
                 <span class="text-white font-bold">⚡</span>
               </div>
-              <h3 class="text-lg font-semibold text-white">01_features</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">01_features</h3>
             </div>
-            <p class="text-slate-400 text-sm mb-3">Funcionalidades MVP y post-MVP</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Funcionalidades MVP y post-MVP</p>
             <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">mvp_features.md</span>
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">post_mvp_features.md</span>
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">feature_matrix.md</span>
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-700 dark:text-blue-300 rounded text-xs">mvp_features.md</span>
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-700 dark:text-blue-300 rounded text-xs">post_mvp_features.md</span>
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-700 dark:text-blue-300 rounded text-xs">feature_matrix.md</span>
             </div>
           </div>
 
           <!-- Architecture -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="400">
             <div class="flex items-center mb-4">
               <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
                 <span class="text-white font-bold">🏗️</span>
               </div>
-              <h3 class="text-lg font-semibold text-white">02_architecture</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">02_architecture</h3>
             </div>
-            <p class="text-slate-400 text-sm mb-3">Arquitectura del sistema y stack tecnológico</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Arquitectura del sistema y stack tecnológico</p>
             <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">system_architecture.md</span>
-              <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">tech_stack.md</span>
-              <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">data_model.md</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-700 dark:text-green-300 rounded text-xs">system_architecture.md</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-700 dark:text-green-300 rounded text-xs">tech_stack.md</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-700 dark:text-green-300 rounded text-xs">data_model.md</span>
             </div>
           </div>
 
           <!-- Guides -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="500">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="500">
             <div class="flex items-center mb-4">
               <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-lg flex items-center justify-center mr-3">
                 <span class="text-white font-bold">📖</span>
               </div>
-              <h3 class="text-lg font-semibold text-white">03_guides</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">03_guides</h3>
             </div>
-            <p class="text-slate-400 text-sm mb-3">Guías para desarrolladores y usuarios</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Guías para desarrolladores y usuarios</p>
             <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs">developer_guide.md</span>
-              <span class="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs">user_guide.md</span>
-              <span class="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs">faq.md</span>
+              <span class="px-2 py-1 bg-purple-500/20 text-purple-700 dark:text-purple-300 rounded text-xs">developer_guide.md</span>
+              <span class="px-2 py-1 bg-purple-500/20 text-purple-700 dark:text-purple-300 rounded text-xs">user_guide.md</span>
+              <span class="px-2 py-1 bg-purple-500/20 text-purple-700 dark:text-purple-300 rounded text-xs">faq.md</span>
             </div>
           </div>
 
           <!-- Todos -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-orange-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="600">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-orange-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="600">
             <div class="flex items-center mb-4">
               <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center mr-3">
                 <span class="text-white font-bold">✅</span>
               </div>
-              <h3 class="text-lg font-semibold text-white">04_todos</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">04_todos</h3>
             </div>
-            <p class="text-slate-400 text-sm mb-3">Backlog y tareas pendientes</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Backlog y tareas pendientes</p>
             <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 rounded text-xs">todos.md</span>
-              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 rounded text-xs">backlog.md</span>
+              <span class="px-2 py-1 bg-orange-500/20 text-orange-700 dark:text-orange-300 rounded text-xs">todos.md</span>
+              <span class="px-2 py-1 bg-orange-500/20 text-orange-700 dark:text-orange-300 rounded text-xs">backlog.md</span>
             </div>
           </div>
 
           <!-- Philosophy Docs -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="700">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10 cursor-pointer" data-aos="fade-up" data-aos-delay="700">
             <div class="flex items-center mb-4">
               <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg flex items-center justify-center mr-3">
                 <span class="text-white font-bold">🧠</span>
               </div>
-              <h3 class="text-lg font-semibold text-white">Filosofía & Diseño</h3>
+              <h3 class="text-lg font-semibold text-slate-900 dark:text-white">Filosofía & Diseño</h3>
             </div>
-            <p class="text-slate-400 text-sm mb-3">Principios filosóficos y de diseño</p>
+            <p class="text-slate-600 dark:text-slate-400 text-sm mb-3">Principios filosóficos y de diseño</p>
             <div class="flex flex-wrap gap-1">
-              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">CARACTERISTICAS.md</span>
-              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">PRINCIPIOS_DISENO.md</span>
-              <span class="px-2 py-1 bg-amber-500/20 text-amber-300 rounded text-xs">SABIDURIO_TECNOLOGIA.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-700 dark:text-amber-300 rounded text-xs">CARACTERISTICAS.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-700 dark:text-amber-300 rounded text-xs">PRINCIPIOS_DISENO.md</span>
+              <span class="px-2 py-1 bg-amber-500/20 text-amber-700 dark:text-amber-300 rounded text-xs">SABIDURIO_TECNOLOGIA.md</span>
             </div>
           </div>
         </div>
 
         <!-- Transparency Message -->
         <div class="text-center" data-aos="fade-up" data-aos-delay="800">
-          <div class="bg-gradient-to-r from-amber-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30 max-w-4xl mx-auto">
-            <h3 class="text-2xl font-light text-white mb-4">¿Por qué esta transparencia?</h3>
-            <p class="text-amber-100/90 leading-relaxed mb-6">
+          <div class="bg-gradient-to-r from-amber-500/20 to-orange-500/20 dark:from-amber-600/20 dark:to-orange-600/20 backdrop-blur-sm rounded-2xl p-8 border border-amber-400/30 max-w-4xl mx-auto">
+            <h3 class="text-2xl font-light text-slate-900 dark:text-white mb-4">¿Por qué esta transparencia?</h3>
+            <p class="text-amber-700/90 dark:text-amber-100/90 leading-relaxed mb-6">
               Creemos que la excelencia se construye sobre la confianza. Al compartir todo nuestro proceso de desarrollo, roadmap y decisiones técnicas, demostramos que SOPHIA no es solo una aplicación hermosa, sino un proyecto construido con integridad y ambición de clase mundial.
             </p>
             <a href="/documentation" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/25">
@@ -546,36 +546,36 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Testimonials: Historias de Transformación Filosófica -->
-    <section id="testimonials" class="py-24 bg-gradient-to-b from-slate-900 to-slate-800 relative">
-      <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/10 via-transparent to-violet-900/10"></div>
+    <section id="testimonials" class="py-24 bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 relative">
+      <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 via-transparent to-violet-500/10 dark:from-indigo-900/10 dark:via-transparent dark:to-violet-900/10"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-4xl md:text-5xl font-light text-white mb-6 tracking-wide">
+          <h2 class="text-4xl md:text-5xl font-light text-slate-900 dark:text-white mb-6 tracking-wide">
             Historias de Transformación Filosófica
           </h2>
-          <p class="text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+          <p class="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
             Personas reales transformando sus vidas a través de la sabiduría ancestral aplicada con IA. Cada historia es única, cada lección es profunda.
           </p>
         </div>
 
         <!-- Featured Testimonial -->
         <div class="mb-16" data-aos="fade-up" data-aos-delay="200">
-          <div class="bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-slate-600/30 max-w-5xl mx-auto">
+          <div class="bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-slate-200/30 dark:border-slate-600/30 max-w-5xl mx-auto">
             <div class="text-center mb-8">
               <div class="w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
                 🧘‍♀️
               </div>
-              <div class="text-amber-400 font-semibold text-lg mb-2">Estoicismo + IA</div>
-              <h3 class="text-2xl font-light text-white mb-4">"De la Ansiedad al Equilibrio Interior"</h3>
+              <div class="text-amber-600 dark:text-amber-400 font-semibold text-lg mb-2">Estoicismo + IA</div>
+              <h3 class="text-2xl font-light text-slate-900 dark:text-white mb-4">"De la Ansiedad al Equilibrio Interior"</h3>
             </div>
-            <blockquote class="text-xl text-slate-300 leading-relaxed mb-8 text-center italic">
+            <blockquote class="text-xl text-slate-700 dark:text-slate-300 leading-relaxed mb-8 text-center italic">
               "Durante un período de mucho estrés laboral, registré mis preocupaciones en SOPHIA. La IA, aplicando principios estoicos, me recordó que solo controlo mis acciones, no los resultados. Esta perspectiva me dio una paz que ningún terapeuta había logrado. Hoy manejo el estrés con serenidad filosófica."
             </blockquote>
             <div class="flex items-center justify-center">
               <div class="flex-shrink-0 h-16 w-16 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-2xl font-bold text-white mr-4">S</div>
               <div>
-                <div class="text-lg font-semibold text-white">Sofia M.</div>
-                <div class="text-slate-400">Ejecutiva de Tecnología • Madrid</div>
+                <div class="text-lg font-semibold text-slate-900 dark:text-white">Sofia M.</div>
+                <div class="text-slate-500 dark:text-slate-400">Ejecutiva de Tecnología • Madrid</div>
               </div>
             </div>
           </div>
@@ -584,109 +584,109 @@ import Layout from '../layouts/Layout.astro';
         <!-- Testimonial Grid -->
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <!-- Testimonial 1 -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10" data-aos="fade-up" data-aos-delay="300">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-blue-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10" data-aos="fade-up" data-aos-delay="300">
             <div class="mb-4">
-              <div class="text-blue-400 font-semibold text-sm mb-2">Budismo + IA</div>
-              <h4 class="text-lg font-semibold text-white mb-3">"Mindfulness en el Caos Moderno"</h4>
+              <div class="text-blue-600 dark:text-blue-400 font-semibold text-sm mb-2">Budismo + IA</div>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-3">"Mindfulness en el Caos Moderno"</h4>
             </div>
-            <p class="text-slate-300 leading-relaxed mb-4 text-sm">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4 text-sm">
               "SOPHIA me enseñó a encontrar claridad en el momento presente. Cuando estoy abrumada por deadlines, su mentor de IA me guía hacia la atención plena budista. Ha transformado mi relación con el trabajo."
             </p>
             <div class="flex items-center">
               <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center text-lg font-bold text-white mr-3">L</div>
               <div>
-                <div class="text-sm font-medium text-white">Lucía R.</div>
-                <div class="text-xs text-slate-400">Arquitecta • Barcelona</div>
+                <div class="text-sm font-medium text-slate-900 dark:text-white">Lucía R.</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">Arquitecta • Barcelona</div>
               </div>
             </div>
           </div>
 
           <!-- Testimonial 2 -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10" data-aos="fade-up" data-aos-delay="400">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-green-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10" data-aos="fade-up" data-aos-delay="400">
             <div class="mb-4">
-              <div class="text-green-400 font-semibold text-sm mb-2">Taoísmo + IA</div>
-              <h4 class="text-lg font-semibold text-white mb-3">"Fluir con los Cambios"</h4>
+              <div class="text-green-600 dark:text-green-400 font-semibold text-sm mb-2">Taoísmo + IA</div>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-3">"Fluir con los Cambios"</h4>
             </div>
-            <p class="text-slate-300 leading-relaxed mb-4 text-sm">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4 text-sm">
               "Como emprendedor, los cambios constantes me generaban resistencia. SOPHIA me mostró cómo fluir con los acontecimientos taoístas. Ahora veo las oportunidades donde antes veía obstáculos."
             </p>
             <div class="flex items-center">
               <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-lg font-bold text-white mr-3">M</div>
               <div>
-                <div class="text-sm font-medium text-white">Miguel A.</div>
-                <div class="text-xs text-slate-400">Emprendedor • México City</div>
+                <div class="text-sm font-medium text-slate-900 dark:text-white">Miguel A.</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">Emprendedor • México City</div>
               </div>
             </div>
           </div>
 
           <!-- Testimonial 3 -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10" data-aos="fade-up" data-aos-delay="500">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-purple-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10" data-aos="fade-up" data-aos-delay="500">
             <div class="mb-4">
-              <div class="text-purple-400 font-semibold text-sm mb-2">Existencialismo + IA</div>
-              <h4 class="text-lg font-semibold text-white mb-3">"Encontrar Propósito Auténtico"</h4>
+              <div class="text-purple-600 dark:text-purple-400 font-semibold text-sm mb-2">Existencialismo + IA</div>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-3">"Encontrar Propósito Auténtico"</h4>
             </div>
-            <p class="text-slate-300 leading-relaxed mb-4 text-sm">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4 text-sm">
               "Después de una crisis existencial, SOPHIA me ayudó a explorar mi libertad y responsabilidad. Sus perspectivas existencialistas me dieron el coraje para vivir auténticamente."
             </p>
             <div class="flex items-center">
               <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-lg font-bold text-white mr-3">C</div>
               <div>
-                <div class="text-sm font-medium text-white">Carlos V.</div>
-                <div class="text-xs text-slate-400">Filósofo Independiente • Buenos Aires</div>
+                <div class="text-sm font-medium text-slate-900 dark:text-white">Carlos V.</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">Filósofo Independiente • Buenos Aires</div>
               </div>
             </div>
           </div>
 
           <!-- Testimonial 4 -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-pink-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/10" data-aos="fade-up" data-aos-delay="600">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-pink-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/10" data-aos="fade-up" data-aos-delay="600">
             <div class="mb-4">
-              <div class="text-pink-400 font-semibold text-sm mb-2">Zen + IA</div>
-              <h4 class="text-lg font-semibold text-white mb-3">"Simplicidad en la Complejidad"</h4>
+              <div class="text-pink-600 dark:text-pink-400 font-semibold text-sm mb-2">Zen + IA</div>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-3">"Simplicidad en la Complejidad"</h4>
             </div>
-            <p class="text-slate-300 leading-relaxed mb-4 text-sm">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4 text-sm">
               "En mi carrera tecnológica, SOPHIA me enseñó que la verdadera innovación viene de la simplicidad zen. Ahora tomo decisiones más claras y efectivas."
             </p>
             <div class="flex items-center">
               <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-lg font-bold text-white mr-3">A</div>
               <div>
-                <div class="text-sm font-medium text-white">Ana K.</div>
-                <div class="text-xs text-slate-400">Ingeniera de Software • São Paulo</div>
+                <div class="text-sm font-medium text-slate-900 dark:text-white">Ana K.</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">Ingeniera de Software • São Paulo</div>
               </div>
             </div>
           </div>
 
           <!-- Testimonial 5 -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-indigo-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/10" data-aos="fade-up" data-aos-delay="700">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-indigo-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/10" data-aos="fade-up" data-aos-delay="700">
             <div class="mb-4">
-              <div class="text-indigo-400 font-semibold text-sm mb-2">Humanismo + IA</div>
-              <h4 class="text-lg font-semibold text-white mb-3">"Empatía y Conexión Humana"</h4>
+              <div class="text-indigo-600 dark:text-indigo-400 font-semibold text-sm mb-2">Humanismo + IA</div>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-3">"Empatía y Conexión Humana"</h4>
             </div>
-            <p class="text-slate-300 leading-relaxed mb-4 text-sm">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4 text-sm">
               "Como terapeuta, SOPHIA enriqueció mi práctica. Sus perspectivas humanistas me recuerdan diariamente la importancia de la empatía y el potencial humano."
             </p>
             <div class="flex items-center">
               <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gradient-to-br from-indigo-400 to-blue-500 flex items-center justify-center text-lg font-bold text-white mr-3">R</div>
               <div>
-                <div class="text-sm font-medium text-white">Rosa M.</div>
-                <div class="text-xs text-slate-400">Terapeuta • Santiago</div>
+                <div class="text-sm font-medium text-slate-900 dark:text-white">Rosa M.</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">Terapeuta • Santiago</div>
               </div>
             </div>
           </div>
 
           <!-- Testimonial 6 -->
-          <div class="group bg-gradient-to-br from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10" data-aos="fade-up" data-aos-delay="800">
+          <div class="group bg-gradient-to-br from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/30 dark:border-slate-600/30 hover:border-amber-400/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10" data-aos="fade-up" data-aos-delay="800">
             <div class="mb-4">
-              <div class="text-amber-400 font-semibold text-sm mb-2">Estoicismo + Budismo</div>
-              <h4 class="text-lg font-semibold text-white mb-3">"Resiliencia y Paz Interior"</h4>
+              <div class="text-amber-600 dark:text-amber-400 font-semibold text-sm mb-2">Estoicismo + Budismo</div>
+              <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-3">"Resiliencia y Paz Interior"</h4>
             </div>
-            <p class="text-slate-300 leading-relaxed mb-4 text-sm">
+            <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-4 text-sm">
               "Después de una pérdida significativa, SOPHIA combinó estoicismo para la resiliencia con budismo para la aceptación. Me reconstruyó desde dentro hacia afuera."
             </p>
             <div class="flex items-center">
               <div class="flex-shrink-0 h-10 w-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-lg font-bold text-white mr-3">E</div>
               <div>
-                <div class="text-sm font-medium text-white">Elena P.</div>
-                <div class="text-xs text-slate-400">Profesora • Lima</div>
+                <div class="text-sm font-medium text-slate-900 dark:text-white">Elena P.</div>
+                <div class="text-xs text-slate-500 dark:text-slate-400">Profesora • Lima</div>
               </div>
             </div>
           </div>
@@ -696,20 +696,20 @@ import Layout from '../layouts/Layout.astro';
         <div class="text-center mt-16" data-aos="fade-up" data-aos-delay="900">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div>
-              <div class="text-3xl font-bold text-amber-400 mb-2">500+</div>
-              <div class="text-slate-400 text-sm">Historias de Transformación</div>
+              <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">500+</div>
+              <div class="text-slate-500 dark:text-slate-400 text-sm">Historias de Transformación</div>
             </div>
             <div>
-              <div class="text-3xl font-bold text-blue-400 mb-2">95%</div>
-              <div class="text-slate-400 text-sm">Satisfacción del Usuario</div>
+              <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">95%</div>
+              <div class="text-slate-500 dark:text-slate-400 text-sm">Satisfacción del Usuario</div>
             </div>
             <div>
-              <div class="text-3xl font-bold text-green-400 mb-2">50+</div>
-              <div class="text-slate-400 text-sm">Países Representados</div>
+              <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">50+</div>
+              <div class="text-slate-500 dark:text-slate-400 text-sm">Países Representados</div>
             </div>
             <div>
-              <div class="text-3xl font-bold text-purple-400 mb-2">4.9/5</div>
-              <div class="text-slate-400 text-sm">Calificación Promedio</div>
+              <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">4.9/5</div>
+              <div class="text-slate-500 dark:text-slate-400 text-sm">Calificación Promedio</div>
             </div>
           </div>
         </div>
@@ -719,7 +719,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Final CTA: La Revolución del Desarrollo Personal -->
     <section id="download" class="relative py-24 overflow-hidden">
       <!-- Animated Background -->
-      <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/30 to-amber-900/20">
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-purple-50/30 to-amber-50/20 dark:from-slate-900 dark:via-purple-900/30 dark:to-amber-900/20">
         <div class="absolute inset-0 opacity-20">
           <div class="revolution-animation"></div>
         </div>
@@ -737,20 +737,20 @@ import Layout from '../layouts/Layout.astro';
       <div class="max-w-6xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative z-10" data-aos="zoom-in">
         <div class="mb-8">
           <div class="inline-flex items-center px-4 py-2 bg-amber-500/20 backdrop-blur-sm rounded-full border border-amber-400/30 mb-6">
-            <span class="text-amber-400 font-semibold text-sm">🚀 95% COMPLETADO</span>
+            <span class="text-amber-700 dark:text-amber-400 font-semibold text-sm">🚀 95% COMPLETADO</span>
           </div>
-          <h2 class="text-4xl md:text-6xl font-light text-white mb-6 tracking-wide" data-aos-delay="100">
+          <h2 class="text-4xl md:text-6xl font-light text-slate-900 dark:text-white mb-6 tracking-wide" data-aos-delay="100">
             ¿Listo para la Revolución?
           </h2>
-          <p class="text-xl md:text-2xl text-amber-100/90 font-light leading-relaxed max-w-4xl mx-auto mb-8" data-aos-delay="200">
+          <p class="text-xl md:text-2xl text-amber-700/90 dark:text-amber-100/90 font-light leading-relaxed max-w-4xl mx-auto mb-8" data-aos-delay="200">
             Únete a la transformación del desarrollo personal. SOPHIA está aquí para elevar la consciencia humana a través de la tecnología y la sabiduría ancestral.
           </p>
         </div>
 
         <!-- Mission Statement -->
-        <div class="bg-gradient-to-r from-slate-800/50 to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-600/30 max-w-4xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="300">
-          <div class="text-amber-400 font-semibold text-lg mb-4">Hecho con ❤️ para ayudar a las personas a crecer a través de la sabiduría ancestral</div>
-          <div class="text-white text-2xl font-light italic">
+        <div class="bg-gradient-to-r from-slate-100/50 to-slate-200/30 dark:from-slate-800/50 dark:to-slate-700/30 backdrop-blur-sm rounded-2xl p-8 border border-slate-200/30 dark:border-slate-600/30 max-w-4xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-amber-700 dark:text-amber-400 font-semibold text-lg mb-4">Hecho con ❤️ para ayudar a las personas a crecer a través de la sabiduría ancestral</div>
+          <div class="text-slate-900 dark:text-white text-2xl font-light italic">
             "Únete a la revolución del desarrollo personal. ¡Haz que cada día cuente!"
           </div>
         </div>
@@ -769,20 +769,20 @@ import Layout from '../layouts/Layout.astro';
         <!-- Social Proof -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="500">
           <div class="text-center">
-            <div class="text-3xl font-bold text-amber-400 mb-2">10K+</div>
-            <div class="text-slate-400 text-sm">Usuarios en Lista de Espera</div>
+            <div class="text-3xl font-bold text-amber-600 dark:text-amber-400 mb-2">10K+</div>
+            <div class="text-slate-500 dark:text-slate-400 text-sm">Usuarios en Lista de Espera</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-blue-400 mb-2">50+</div>
-            <div class="text-slate-400 text-sm">Países Interesados</div>
+            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">50+</div>
+            <div class="text-slate-500 dark:text-slate-400 text-sm">Países Interesados</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-green-400 mb-2">95%</div>
-            <div class="text-slate-400 text-sm">Completitud del MVP</div>
+            <div class="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">95%</div>
+            <div class="text-slate-500 dark:text-slate-400 text-sm">Completitud del MVP</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-purple-400 mb-2">2026</div>
-            <div class="text-slate-400 text-sm">Lanzamiento Oficial</div>
+            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">2026</div>
+            <div class="text-slate-500 dark:text-slate-400 text-sm">Lanzamiento Oficial</div>
           </div>
         </div>
       </div>
@@ -791,7 +791,7 @@ import Layout from '../layouts/Layout.astro';
   </main>
 
   <!-- Footer: Conclusión Filosófica -->
-  <footer class="bg-gradient-to-b from-slate-900 to-slate-800 border-t border-slate-700/50">
+  <footer class="bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border-t border-slate-200/50 dark:border-slate-700/50">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -802,27 +802,27 @@ import Layout from '../layouts/Layout.astro';
               <span class="text-2xl">🧠</span>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-white">SOPHIA</h3>
-              <p class="text-slate-400 text-sm">Desarrollo Personal con IA</p>
+              <h3 class="text-xl font-semibold text-slate-900 dark:text-white">SOPHIA</h3>
+              <p class="text-slate-600 dark:text-slate-400 text-sm">Desarrollo Personal con IA</p>
             </div>
           </div>
-          <p class="text-slate-300 leading-relaxed mb-6 max-w-md">
+          <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-6 max-w-md">
             Transformando vidas a través de la fusión perfecta entre sabiduría milenaria y tecnología de vanguardia. Tu viaje de crecimiento personal comienza aquí.
           </p>
           <div class="flex space-x-4">
-            <a href="#" class="w-10 h-10 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center text-slate-300 hover:text-white transition-colors">
+            <a href="#" class="w-10 h-10 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-full flex items-center justify-center text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition-colors">
               <span class="sr-only">Twitter</span>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
               </svg>
             </a>
-            <a href="#" class="w-10 h-10 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center text-slate-300 hover:text-white transition-colors">
+            <a href="#" class="w-10 h-10 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-full flex items-center justify-center text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition-colors">
               <span class="sr-only">LinkedIn</span>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
-            <a href="#" class="w-10 h-10 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center text-slate-300 hover:text-white transition-colors">
+            <a href="#" class="w-10 h-10 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-full flex items-center justify-center text-slate-700 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition-colors">
               <span class="sr-only">GitHub</span>
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.031 1.595 1.031 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
@@ -833,36 +833,36 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Quick Links -->
         <div>
-          <h4 class="text-white font-semibold mb-4">Producto</h4>
+          <h4 class="text-slate-900 dark:text-white font-semibold mb-4">Producto</h4>
           <ul class="space-y-2">
-            <li><a href="#philosophies" class="text-slate-400 hover:text-amber-400 transition-colors">El Diario</a></li>
-            <li><a href="#philosophies" class="text-slate-400 hover:text-amber-400 transition-colors">El Mentor IA</a></li>
-            <li><a href="#technology" class="text-slate-400 hover:text-amber-400 transition-colors">Tecnología</a></li>
-            <li><a href="#download" class="text-slate-400 hover:text-amber-400 transition-colors">Descargar</a></li>
+            <li><a href="#philosophies" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">El Diario</a></li>
+            <li><a href="#philosophies" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">El Mentor IA</a></li>
+            <li><a href="#technology" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">Tecnología</a></li>
+            <li><a href="#download" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">Descargar</a></li>
           </ul>
         </div>
 
         <!-- Resources -->
         <div>
-          <h4 class="text-white font-semibold mb-4">Recursos</h4>
+          <h4 class="text-slate-900 dark:text-white font-semibold mb-4">Recursos</h4>
           <ul class="space-y-2">
-            <li><a href="/blog" class="text-slate-400 hover:text-amber-400 transition-colors">Blog</a></li>
-            <li><a href="/resources" class="text-slate-400 hover:text-amber-400 transition-colors">Recursos</a></li>
-            <li><a href="#biblioteca" class="text-slate-400 hover:text-amber-400 transition-colors">Documentación</a></li>
-            <li><a href="/support" class="text-slate-400 hover:text-amber-400 transition-colors">Soporte</a></li>
-            <li><a href="/privacy" class="text-slate-400 hover:text-amber-400 transition-colors">Privacidad</a></li>
+            <li><a href="/blog" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">Blog</a></li>
+            <li><a href="/resources" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">Recursos</a></li>
+            <li><a href="#biblioteca" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">Documentación</a></li>
+            <li><a href="/support" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">Soporte</a></li>
+            <li><a href="/privacy" class="text-slate-600 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-400 transition-colors">Privacidad</a></li>
           </ul>
         </div>
       </div>
 
       <!-- Bottom Footer -->
-      <div class="border-t border-slate-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-slate-400 text-sm mb-4 md:mb-0">
+      <div class="border-t border-slate-200/50 dark:border-slate-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 md:mb-0">
           &copy; 2025 SOPHIA. Hecho con ❤️ para ayudar a las personas a crecer a través de la sabiduría ancestral.
         </p>
-        <div class="flex items-center space-x-6 text-sm text-slate-400">
+        <div class="flex items-center space-x-6 text-sm text-slate-600 dark:text-slate-400">
           <span>Únete a la revolución del desarrollo personal</span>
-          <span class="text-amber-400">¡Haz que cada día cuente!</span>
+          <span class="text-amber-600 dark:text-amber-400">¡Haz que cada día cuente!</span>
         </div>
       </div>
     </div>
